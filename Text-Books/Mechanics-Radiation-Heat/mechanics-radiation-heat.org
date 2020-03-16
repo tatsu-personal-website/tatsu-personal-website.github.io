@@ -1,0 +1,5 @@
+#+SETUPFILE: ~/Programming/knowledge-base/notes-style.org
+#+TITLE: The Feynman Lectures on Physics: Mainly Mechanics, Radiation and Heat
+
+[[../text-books.org][Text Book List]]
+

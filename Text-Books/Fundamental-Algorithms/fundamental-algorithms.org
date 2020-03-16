@@ -1,0 +1,8 @@
+#+SETUPFILE: ~/Programming/knowledge-base/notes-style.org
+#+TITLE: The Art of Computer Programming: Fundamental Algorithms
+
+[[../text-books.org][Text Book List]]
+
+* [[./Chapter-0/chapter-0.org][Chapter 0: Notes on the Exercises]]
+
+* [[./Chapter-1/chapter-1.org][Chapter 1: Basic Concepts]]

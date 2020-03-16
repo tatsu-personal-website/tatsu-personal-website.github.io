@@ -1,0 +1,86 @@
+#+SETUPFILE: ~/Programming/knowledge-base/notes-style.org
+#+TITLE: The Art of Computer Programming: Fundamental Algorithms ​[Chapter 0​]
+
+[[../fundamental-algorithms.org][Chapter List]]
+
+* ​Notes on the Exercises
+
+This chapter is not of much importance. Knuth here simply explains effective ways to use the book and provides a key for his ratings of each problem:
+
+| Code | Explanation             |
+|------+-------------------------|
+| M    | Mathematically oriented |
+| HM   | Requiring "higher math" |
+| 00   | Immediate               |
+| 10   | Simple (one minute)     |
+| 20   | Medium (quarter hour)   |
+| 30   | Moderately hard         |
+| 40   | Term project            |
+| 50   | Research problem        |
+
+** Exercises
+
+*** ​[00​] What does the rating "M20" mean?
+
+The M indicates that the problem is mathematically oriented. The 20 indicates that the problem is average and should take no more than fifteen to twenty minutes to solve.
+
+*** ​[10​] Of what value can the exercises in a text book be to the reader?
+
+As Knuth specified earlier in this chapter, it is extremely difficult for the average reader to learn a subject by just reading about it. The value in having exercises will come from showing the reader specific applications of what was learned and to encourage further thinking on the topic.
+
+*** ​[14​] Prove[fn:1] that 13^3 = 2197. Generalize your answer.
+
+/Proof of the proposition 13^3 = 2197:/
+
+Previous knowledge applied: laws of exponents[fn:2], arithmetic[fn:3].
+
+\begin{equation}
+\begin{align*}
+13^3 = 13^2 \cdot 13^1 \\
+&= 13^1 \cdot 13^1 \cdot 13^1 \\
+&= 13^1 \cdot 13^1 \cdot 13 \\
+&= 13^1 \cdot 13 \cdot 13 \\
+&= 13^1 \cdot 169 \\
+&= 13 \cdot 169 \\
+&= 2197
+\end{align*}
+\end{equation}
+
+Therefore, 13^3 = 2197.
+
+To generalize this answer, we can use capital pi notation[fn:4] and show that for all positive integers of n:
+
+\begin{equation}
+\prod_{i = 1}^{n} = x^n
+\end{equation} 
+*** ​[HM45​] Prove that when n is an integer, n > 2, the equation x^n + y^n = z^n has no solution in positive integers x, y, z.
+
+This is quite literally Fermat's Last Theorem; I will not even attempt to solve this just yet. Considering how long the actual proof is, this should be rated /at least/ HM49.
+
+[fn:1] For a guide on structuring proofs, there is a nice explanation by Eugenia Cheng which can be found [[https://deopurkar.github.io/teaching/algebra1/cheng.pdf][here]]. Her website is [[eugeniacheng.com][here]].
+
+[fn:2] The laws of exponents that we have used are:
+
+\begin{equation}
+x^1 = x
+\end{equation}
+
+We have also used:
+
+\begin{equation}
+x^a \cdot x^b = x^{a+b}
+\end{equation}
+
+[fn:3] Only addition and multiplication were used.
+
+[fn:4] Capital pi notation simply means consecutive multiplication. A clear example would be:
+
+\begin{equation}
+\prod_{i = 1}^{4} = 1 \cdot 2 \cdot 3 \cdot 4
+\end{equation}
+
+Which translates to:
+
+\begin{equation}
+\prod_{i = 1}^{4} = 24
+\end{equation}
