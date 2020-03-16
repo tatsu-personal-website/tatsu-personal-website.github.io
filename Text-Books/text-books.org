@@ -1,4 +1,4 @@
-#+SETUPFILE: ~/Programming/knowledge-base/notes-style.org
+#+SETUPFILE: notes-style.org
 #+TITLE: Text Books
 
 [[.][Index]]

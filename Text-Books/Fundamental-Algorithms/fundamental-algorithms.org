@@ -1,4 +1,4 @@
-#+SETUPFILE: ~/Programming/knowledge-base/notes-style.org
+#+SETUPFILE: ../notes-style.org
 #+TITLE: The Art of Computer Programming: Fundamental Algorithms
 
 [[../text-books.org][Text Book List]]
