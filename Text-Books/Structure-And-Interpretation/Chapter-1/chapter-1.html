@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2020-07-03 Fri 19:24 -->
+<!-- 2020-07-04 Sat 14:41 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Structure and Interpretation of Computer Programs ​[Chapter 1​]</title>
@@ -9,7 +9,7 @@
 <meta name="author" content="Tatsu">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="http://taopeng.me/org-notes-style/css/notes.css" rel="stylesheet" type="text/css" />
+<link href="../../../../css/notes.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -65,7 +65,13 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org4436db3">1. Building Abstractions with Procedures</a></li>
+<li><a href="#orge84eb3b">1. Building Abstractions with Procedures</a></li>
+<li><a href="#orgd04662d">2. Programming in Lisp</a>
+<ul>
+<li><a href="#orgb4d3ad6">2.1. The Elements of Programming</a></li>
+<li><a href="#orgcfcdb44">2.2. Expressions</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </nav>
@@ -73,13 +79,62 @@ for the JavaScript code in this tag.
 <a href="../structure-and-interpretation.html">Chapter List</a>
 </p>
 
-<div id="outline-container-org4436db3" class="outline-2">
-<h2 id="org4436db3"><span class="section-number-2">1</span> Building Abstractions with Procedures</h2>
+<div id="outline-container-orge84eb3b" class="outline-2">
+<h2 id="orge84eb3b"><span class="section-number-2">1</span> Building Abstractions with Procedures</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+This chapter covers the idea of a <i>computational process</i>. Broadly speaking, a computational process is an abstract thing that, as it evolves, manipulates other abstract things called <i>data</i>. The evolution of the process is directed by a set of instructions or pattern of rules known as a <i>program</i> which is created by people. An analogy is used of conjuring the spirits of a computer (computational processes) using spells (programs).
+</p>
+
+<p>
+This analogy likening computer programmers to sorcerers is rather apt since a computational process cannot be seen or touched, yet it can perform useful work (much like the sorcerer's idea of a spirit). The spell is writting using a programming language to prescribe the tasks we want our processes to perform. Novice programmers, much like a sorcerer's apprentice, must learn and understand the consequences of the conjuring since a computational process will execute programs precisely and accurately.
+</p>
+
+<p>
+Well designed computational systems (created by experienced sorcerers) are designed in a modular manner so that different parts can be created, modified, debugged or replaced individually.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd04662d" class="outline-2">
+<h2 id="orgd04662d"><span class="section-number-2">2</span> Programming in Lisp</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+The programming language of choice for this book is a dialect of Lisp known as <i>Scheme</i>. Lisp, which stands for LISt Processing, was created in the late 1950s in order to use recursion equations as a model of computation. The most significant feature of Lisp is the fact that processes (known as procedures in Lisp) can be manipulated as data. This ability to represent processes as data make Lisp ideal for writing compiler and interpreters, among other programs.
+</p>
+</div>
+
+<div id="outline-container-orgb4d3ad6" class="outline-3">
+<h3 id="orgb4d3ad6"><span class="section-number-3">2.1</span> The Elements of Programming</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+When describing a programming language, one of the most important aspects is determining how simple ideas can be combined to create more complex ones. Every powerful programming language utilizes three mechanisms to accomplish this:
+</p>
+
+<ul class="org-ul">
+<li>Primitive Expressions: these represent the simplest entities or building blocks that the language is concerned with.</li>
+<li>Means of Combination: the method by which compound elements are built from simple ones.</li>
+<li>Means of Abstraction: the method by which compound elements can be named or manipulated as units.</li>
+</ul>
+
+<p>
+Essentially, we take the simplest building blocks, combine them into more complex structures and then find a way to treat the complex structures as simple building blocks.
+</p>
+
+<p>
+There are two kinds of elements in programming: procedures and data (which later end up being not very distinct). Data involves the elements to be manipulated and procedures describe the rules for manipulating the data.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcfcdb44" class="outline-3">
+<h3 id="orgcfcdb44"><span class="section-number-3">2.2</span> Expressions</h3>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Tatsu</p>
-<p class="date">Created: 2020-07-03 Fri 19:24</p>
+<p class="date">Created: 2020-07-04 Sat 14:41</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

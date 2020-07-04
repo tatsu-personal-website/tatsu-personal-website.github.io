@@ -7,10 +7,36 @@
 #+HTML_HEAD: <meta name="viewport" content="width=device-width, initial-scale=1">
 
 # Add notes.css here
-#+HTML_HEAD: <link href="../../../css/notes.css" rel="stylesheet" type="text/css" />
+#+HTML_HEAD: <link href="../../../../css/notes.css" rel="stylesheet" type="text/css" />
 
 #+TITLE: Structure and Interpretation of Computer Programs ​[Chapter 1​]
 
 [[../structure-and-interpretation.org][Chapter List]]
 
 * Building Abstractions with Procedures
+
+This chapter covers the idea of a /computational process/. Broadly speaking, a computational process is an abstract thing that, as it evolves, manipulates other abstract things called /data/. The evolution of the process is directed by a set of instructions or pattern of rules known as a /program/ which is created by people. An analogy is used of conjuring the spirits of a computer (computational processes) using spells (programs).
+
+This analogy likening computer programmers to sorcerers is rather apt since a computational process cannot be seen or touched, yet it can perform useful work (much like the sorcerer's idea of a spirit). The spell is writting using a programming language to prescribe the tasks we want our processes to perform. Novice programmers, much like a sorcerer's apprentice, must learn and understand the consequences of the conjuring since a computational process will execute programs precisely and accurately.
+
+Well designed computational systems (created by experienced sorcerers) are designed in a modular manner so that different parts can be created, modified, debugged or replaced individually.
+
+* Programming in Lisp
+
+The programming language of choice for this book is a dialect of Lisp known as /Scheme/. Lisp, which stands for LISt Processing, was created in the late 1950s in order to use recursion equations as a model of computation. The most significant feature of Lisp is the fact that processes (known as procedures in Lisp) can be manipulated as data. This ability to represent processes as data make Lisp ideal for writing compiler and interpreters, among other programs.
+
+** The Elements of Programming
+
+When describing a programming language, one of the most important aspects is determining how simple ideas can be combined to create more complex ones. Every powerful programming language utilizes three mechanisms to accomplish this:
+
++ Primitive Expressions: these represent the simplest entities or building blocks that the language is concerned with.
++ Means of Combination: the method by which compound elements are built from simple ones.
++ Means of Abstraction: the method by which compound elements can be named or manipulated as units.
+
+Essentially, we take the simplest building blocks, combine them into more complex structures and then find a way to treat the complex structures as simple building blocks.
+
+There are two kinds of elements in programming: procedures and data (which later end up being not very distinct). Data involves the elements to be manipulated and procedures describe the rules for manipulating the data.
+
+** Expressions
+
+
