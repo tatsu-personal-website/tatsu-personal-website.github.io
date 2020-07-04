@@ -1,0 +1,8 @@
+#+SETUPFILE: ../notes-style.org
+#+TITLE: C Programming: A Modern Approach
+
+[[../text-books.org][Text Book List]]
+
+* [[./Chapter-1/chapter-1.org][Chapter 1: Introducing C]]
+
+* [[./Chapter-2/chapter-2.org][Chapter 2: C Fundamentals]]

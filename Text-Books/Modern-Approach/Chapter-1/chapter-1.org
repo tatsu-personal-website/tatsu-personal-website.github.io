@@ -1,0 +1,10 @@
+#+SETUPFILE: ../../notes-style.org
+#+TITLE: C Programming: A Modern Approach ​[Chapter 1​]
+
+[[../fundamental-algorithms.org][Chapter List]]
+
+* Introducing C
+
+** History of C
+
+This chapter gives a brief summary of the history of C and how it was developed by the legendary engineers [[https://en.wikipedia.org/wiki/Dennis_Ritchie][Dennis Ritchie]] and [[https://en.wikipedia.org/wiki/Ken_Thompson][Ken Thompson]]. Ken Thompson first created the UNIX operating system on a [[DEC PDP-7][https://en.wikipedia.org/wiki/PDP-7]] in around 1969 in assembly. To improve the ease of debugging and adding features, he 

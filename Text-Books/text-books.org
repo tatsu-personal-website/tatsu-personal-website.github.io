@@ -1,11 +1,13 @@
 #+SETUPFILE: notes-style.org
 #+TITLE: Text Books
 
-[[.][Index]]
+[[./text-books.html][Index]]
 
 * Programming
 
 ** [[./Fundamental-Algorithms/fundamental-algorithms.org][The Art of Computer Programming: Fundamental Algorithms]]
+** [[./Structure-And-Interpretation/structure-and-interpretation.org][Structure and Interpretation of Computer Programs]]
+** [[./Modern-Approach/modern-approach.org][C Programming: A Modern Approach]]
 * Math
 
 ** [[./Measurement/measurement.org][Measurement]]
