@@ -10,6 +10,8 @@ This site is where I write about things I'm thinking of, mostly American politic
 # TODO: a paragraph only you can write: the clothes, the house, what you care about.
 
 * Elsewhere
+- Résumé :: [[/resume.pdf][PDF]] · [[/resume.json][JSON]]
 - Email :: [[mailto:mail@alexanderphillips.net][mail@alexanderphillips.net]]
+- PGP key :: [[/pgp.asc][pgp.asc]], fingerprint ~EBB0 7F9A CC15 FDA0 F4CF A5B2 39BE 2396 FCD4 4696~
 - Code :: [[https://github.com/Tatsuonline][github.com/Tatsuonline]]
 - Feed :: [[/rss.xml][RSS]]

@@ -3,13 +3,38 @@ import { getEntry, render } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import EssayList from '../components/EssayList.astro';
 import { formatDate, getEssays } from '../lib/essays';
+import resume from '../../resume/resume.json';
 
 const essays = await getEssays();
 const now = await getEntry('pages', 'now');
 const { Content: Now } = now ? await render(now) : { Content: null };
+
+// schema.org Person, from the same data as the résumé, for search engines
+// and other software reading the page.
+const { basics, work, education, skills } = resume;
+const person = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: basics.name,
+  url: basics.url,
+  email: `mailto:${basics.email}`,
+  jobTitle: work[0].position,
+  worksFor: { '@type': 'Organization', name: work[0].name },
+  alumniOf: education.map((e) => ({ '@type': 'CollegeOrUniversity', name: e.institution })),
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: basics.location.city,
+    addressRegion: basics.location.region,
+    addressCountry: basics.location.countryCode,
+  },
+  knowsAbout: skills.flatMap((s) => s.keywords),
+  sameAs: basics.profiles.map((p) => p.url),
+  subjectOf: { '@type': 'DigitalDocument', name: 'Résumé', url: new URL('/resume.pdf', basics.url).href },
+};
 ---
 
 <Base>
+  <script is:inline slot="head" type="application/ld+json" set:html={JSON.stringify(person)} />
   <div class="page">
     <section class="hero">
       <h1 class="hero-name">Alexander Phillips</h1>

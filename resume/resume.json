@@ -1,0 +1,142 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Alexander Phillips",
+    "label": "Principal Engineer, Test Engineering",
+    "email": "mail@alexanderphillips.net",
+    "url": "https://alexanderphillips.net",
+    "summary": "Principal engineer in test engineering and silicon validation, focused on Cadence’s Palladium emulation and Protium prototyping systems. Ten years of building test-automation frameworks, system-monitoring software, and manufacturing tests for rack-scale hardware, starting from a physics background in dark-matter research.",
+    "location": {
+      "city": "San Jose",
+      "region": "California",
+      "countryCode": "US"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "Tatsuonline",
+        "url": "https://github.com/Tatsuonline"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Cadence Design Systems",
+      "position": "Principal Engineer",
+      "description": "Test Engineering, Silicon Validation Group",
+      "location": "San Jose, California",
+      "startDate": "2022",
+      "highlights": [
+        "Created the Protium System Manager (PTSM), which ships on every Protium X3 rack: it reports the live status of every blade and moved blade-to-blade communication from UART to Ethernet, a far more reliable link.",
+        "Built the automated test framework for the Palladium Z3 and Protium X3 rack-level designs, made R&D’s tests run more efficiently, and wrote new tests for several product lines.",
+        "Helped launch Palladium Z3 and Protium X3 into manufacturing."
+      ]
+    },
+    {
+      "name": "Jabil Circuit",
+      "position": "Test Engineering Lead, High Performance Computing",
+      "location": "San Jose, California",
+      "startDate": "2016-04",
+      "endDate": "2022",
+      "highlights": [
+        "Led the department’s test group of engineers and technicians; promoted from intern to test engineering lead and certified as a Subject Matter Expert (SME) Engineer by examination.",
+        "Designed and maintained the automated test infrastructure for a customer’s enterprise emulation platform, and later a large-scale device-testing framework, in Python, Bash, and C shell on Linux.",
+        "Proposed and built a generative adversarial network (GAN) to detect defects in printed circuit boards.",
+        "Built production data tooling: test-result parsers in Python, Rust, and Go for the manufacturing execution system (MES), a live test-progress monitor for the factory floor, and a secure data portal spanning test stations.",
+        "Designed tests with customer engineers, traced design flaws, and consulted site-wide on new product introductions."
+      ]
+    },
+    {
+      "name": "King Saud University",
+      "position": "Research Assistant, Physics",
+      "location": "Riyadh, Saudi Arabia",
+      "startDate": "2015-06",
+      "endDate": "2015-07",
+      "summary": "Built dye-sensitized solar cells and measured their quantum efficiency."
+    },
+    {
+      "name": "Purdue University",
+      "position": "Undergraduate Research Assistant, High Energy Physics",
+      "location": "West Lafayette, Indiana",
+      "startDate": "2013-08",
+      "endDate": "2014-12",
+      "highlights": [
+        "Developed pulse-shape discrimination methods in C and Python to separate neutron and gamma recoils in XENON100 detector data for dark-matter searches.",
+        "Built hardware for a neutron-generator setup, including a hardware replacement for gamma-recoil discrimination scripts."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Purdue University",
+      "studyType": "Bachelor of Science",
+      "area": "Electrical and Computer Engineering, Minor in Physics",
+      "location": "West Lafayette, Indiana",
+      "startDate": "2010-08",
+      "endDate": "2015-12"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywords": [
+        "Python",
+        "Rust",
+        "C",
+        "Go",
+        "Bash",
+        "SQL",
+        "SystemVerilog"
+      ]
+    },
+    {
+      "name": "Hardware and test",
+      "keywords": [
+        "Hardware emulation",
+        "FPGA prototyping",
+        "Rack-level test automation",
+        "Silicon validation",
+        "Manufacturing test",
+        "MES integration",
+        "JTAG"
+      ]
+    },
+    {
+      "name": "Tools",
+      "keywords": [
+        "Linux",
+        "Git",
+        "QuestaSim",
+        "ModelSim"
+      ]
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Subject Matter Expert (SME) Engineer",
+      "issuer": "Jabil Circuit"
+    },
+    {
+      "name": "Lean Bronze (Kaizen)",
+      "issuer": "Jabil Circuit"
+    },
+    {
+      "name": "Qualified Sealed Radioactive Source Handler",
+      "issuer": "Purdue University"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Jabil Star Award",
+      "awarder": "Jabil Circuit"
+    },
+    {
+      "title": "Respect, Recognize, Reward Award",
+      "awarder": "Jabil Circuit"
+    },
+    {
+      "title": "First Place, Regional Best Practices Competition",
+      "awarder": "Jabil Circuit"
+    }
+  ]
+}

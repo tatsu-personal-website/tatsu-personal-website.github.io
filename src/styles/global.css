@@ -467,6 +467,19 @@ dd > p:only-child {
 .prose li::marker {
   color: var(--muted);
 }
+.prose dl {
+  display: grid;
+  grid-template-columns: 6rem minmax(0, 1fr);
+  gap: 0.4rem 1rem;
+  margin: 0 0 1.1em;
+}
+.prose dt {
+  font-style: italic;
+  color: var(--muted);
+}
+.prose dd {
+  margin: 0;
+}
 .prose blockquote {
   margin: 1.6em 0;
   padding-left: 1.25rem;

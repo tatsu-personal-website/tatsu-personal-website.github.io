@@ -10,7 +10,11 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "check": "astro check"
+    "check": "astro check",
+    "predev": "npm run resume",
+    "prebuild": "npm run resume",
+    "resume": "typst compile --root . --font-path resume/fonts --ignore-system-fonts --pdf-standard ua-1 resume/resume.typ public/resume.pdf",
+    "resume:private": "typst compile --root . --font-path resume/fonts --ignore-system-fonts --pdf-standard ua-1 --input private=resume/private.json resume/resume.typ resume/Alexander-Phillips-Resume-private.pdf"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.19",

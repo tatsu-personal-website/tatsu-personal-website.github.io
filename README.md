@@ -55,6 +55,21 @@ LaTeX works as in Org. `\begin{equation}` blocks are numbered in order, and `\re
 
 `content/pages/*.org` become top-level pages: `about.org` → `/about/`. `now.org` also fills the Now box on the home page, so keep it to a short description list and update its `#+date`.
 
+## Résumé
+
+The résumé's content is `resume/resume.json` ([JSON Resume](https://jsonresume.org) format); `resume/resume.typ` lays it out with [Typst](https://typst.app) to match the site. Edit the JSON, not the layout.
+
+```sh
+npm run resume           # public/resume.pdf (also runs before every dev and build)
+npm run resume:private   # resume/Alexander-Phillips-Resume-private.pdf, with your phone number
+```
+
+The private version reads `resume/private.json`, which git ignores, so the phone number never reaches GitHub. The site also serves the same data at `/resume.json`, and the home page carries it as schema.org markup.
+
+The PDF is built for people and parsers alike: one column in reading order, tagged PDF/UA-1 (real headings and lists), title/author/keyword metadata, no text inside images, and ligatures off, since some parsers mangle them. Section labels keep letter-spacing under 0.08em; any wider and text extraction splits them into letters.
+
+`resume/monogram.typ` is the source of the AP monogram on the résumé and of `public/favicon.svg`.
+
 ## How it works
 
 - `src/lib/org.ts` turns Org into HTML (uniorg, then KaTeX, figures, numbered equations, margin notes).

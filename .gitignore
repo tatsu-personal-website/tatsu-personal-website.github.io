@@ -25,3 +25,8 @@ pnpm-debug.log*
 
 # local tooling
 .claude/
+
+# résumé: the public PDF is built from resume/; private details never leave this machine
+public/resume.pdf
+resume/private.json
+resume/*-private.pdf
