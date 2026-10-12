@@ -3,5 +3,5 @@
 #+description: What I'm reading, wearing, and working on.
 
 - Reading :: /The Gentlemen's Book of Etiquette and Manual of Politeness/
-- Wearing :: Navy hopsack blazer, oxford cloth button-down, repp tie
-- Building :: This website
+- Wearing :: Navy hopsack blazer, oxford cloth button-down, repp tie, gray pleated pants, black penny loafers.
+- Building :: This website!
