@@ -1,0 +1,64 @@
+#+title: The EARN IT Act
+#+date: [2020-03-27 Fri]
+#+category: Politics
+#+filetags: :encryption:earn_it:politics:
+
+* Introduction
+Earlier this month, United States Senators [[https://en.wikipedia.org/wiki/Lindsey_Graham][Lindsey Graham]] and [[https://en.wikipedia.org/wiki/Richard_Blumenthal][Richard Blumenthal]] introduced a bill on the floor, the so-called [[https://www.congress.gov/bill/116th-congress/senate-bill/3398/text][EARN IT Act]]. The title of the bill is a backronym which spells out “*E* liminating *A* busive and *R* ampant *N* eglect of *I* nteractive *T* echnologies”. The purported goal of this bill is to /establish a National Commission on Online Child Sexual Exploitation Prevention/; however, the bill also exploits the general lack of public understanding of the technology behind encryption in an effort to eliminate its use.
+
+* What Is Encryption?
+Encryption essentially refers to the process of altering or modifying information such that only the intended recipient can understand the information. The way information is typically encrypted is by using a mathematical algorithm to obfuscate the message, where the underlying pattern of the algorithm is designed to be very difficult for humans and computers to break.
+
+One of the simplest examples of encryption is the Caesar cipher. In this algorithm, each letter in the alphabet is replaced by another letter that is a set number of positions away. We can describe this mathematically as:
+
+\begin{equation} F(x) = (x + n) \mod \sum{x} \end{equation}
+
+where *x* is the original letter, *n* is the number of positions away the new letter is and we do a modulus division by the sum of all the letters to have the numerical position “wrap around”.
+
+Let us say that we want /n/ to be 4, then each letter will be replaced by the letter four positions later (in the English alphabet, the letter A would be E and so on). An example would be:
+
+#+begin_example
+Unencrypted text:      THIS IS A SECRET MESSAGE.
+Encrypted text:        XLMW MW E WIGVIX QIWWEKI.
+#+end_example
+
+Of course, this algorithm is extremely simple and can be broken in seconds by a computer. Modern encryption algorithms utilize difficult problems, such as factoring a large integer composed of two or more large prime factors (which can take a computer years to solve and thus is not considered feasible).
+
+* Why Is Encryption Important?
+Encryption is the backbone of the world wide web. It is necessary for protecting your credit card information when you make an online purchase, for example. If you browse the web, you certainly have used it even if you haven't realized it; any website you visit that starts with *https* is encrypted using encryption protocols called /Transport Layer Security/ or /Secure Sockets Layer/.
+
+* The Fatuous Argument: “I have nothing to hide from the government. Why should I care?”
+Let us take a look at a few hypothetical scenarios.
+
+Scenario 0: A journalist has been provided evidence of government malpractice and misuse of tax payer money. Before she can break the story however, government officials involved in the incident (who have been monitoring her communications) stop her and confiscate all her evidence.
+
+Is this just?
+
+Scenario 1: A concerned citizen is using non-violent protests to ensure that he and other citizens gain the rights they believe they deserve. Government agents that are opposed to those views, monitor their communications, infiltrate their ranks and use whatever means possible to destroy the movement.
+
+Is /this/ just?
+
+Those are not actually hypothetical scenarios; scenario 0 is the situation faced by the journalist and film maker [[https://en.wikipedia.org/wiki/Laura_Poitras][Laura Poitras]], who has been subject to government monitoring for the topics she covers. Scenario 1 was the Federal Bureau of Investigation's “Counter Intelligence Program” ([[https://en.wikipedia.org/wiki/COINTELPRO][COINTELPRO]]) which took place between 1951 and 1971 in order to foil several organizations such as the civil rights and feminist movements.
+
+The bottom line is that giving your government permission to see everything you do or say (even if perfectly legal) is giving them far too much power-- power which they will almost certainly abuse.
+
+It is also important to note that encryption doesn't just protect you from the government, it protects you from criminals interested in stealing your information. You cannot just give a backdoor to the government for the encryption protocols used (allowing them to access the information) without weakening the encryption overall. If you compromise the encryption, it will be exploited very easily by ill intentioned individuals.
+
+* What Does The EARN IT Act State?
+In 1996, the Communications Decency Act had a portion entitled [[https://www.law.cornell.edu/uscode/text/47/230][Section 230]] which guaranteed that anyone involved in the hosting of websites (including Internet Service Providers and site owners) would not be held legally responsible for what people said or published on those sites. This is a powerful piece of legislation that has allowed for free speech to exist and flourish online.
+
+The EARN IT Act will revoke this section of the Communications Decency Act and force companies to be held responsible for what their users publish. Rather deviously, instead of outright banning encryption, they would require that companies scan communications for “problematic” speech or behavior. Scanning encrypted data is still an active area of research and no one knows how to do it (incidentally, this is why encrypted mailbox providers struggle with detecting spam[fn:1]). Since no one knows how to do it, the only viable option to be in compliance with the bill would be to remove encryption altogether.
+
+* Why Is This Happening Now?
+This bill is unfortunately just the latest in a long history of assaults on encryption launched by the United States government. Senators Graham and Blumenthal have decided to strike now while citizens and representatives are preoccupied dealing with the COVID-19 crisis.
+
+* What Can I Do?
+There are three things you can do to help prevent this bill from passing:
+
+- Contact your representatives to ensure the bill gets rejected. The [[https://www.eff.org/][Electronic Frontier Foundation]] has created an excellent tool to help you accomplish this in a few minutes [[https://act.eff.org/action/protect-our-speech-and-security-online-reject-the-graham-blumenthal-bill][here]].
+- Donate to the Electronic Frontier Foundation [[https://supporters.eff.org/donate/join-eff-4][here]].
+- Spread awareness on the importance of protecting encryption.
+
+Thanks for reading.
+
+[fn:1] While companies like [[https://www.tutanota.com/][Tutanota]] have a spam detection system that leaves much to be desired, proper search implementation is a bigger problem.

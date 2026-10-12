@@ -1,0 +1,8 @@
+#+title: Commonplace Book
+#+description: Notes on what I'm reading.
+
+# PLACEHOLDER: the old knowledge-base notes haven't been migrated yet.
+
+Keeping a commonplace book is an old habit: copying out passages and notes from whatever you're reading so you can find them again.
+
+This one will hold my notes on the books I'm working through, starting with the textbook notes from my old knowledge base: /Structure and Interpretation of Computer Programs/, Knuth's /Fundamental Algorithms/, and /The Feynman Lectures on Physics/.

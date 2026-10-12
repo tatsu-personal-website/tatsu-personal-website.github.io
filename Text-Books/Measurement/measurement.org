@@ -1,5 +1,0 @@
-#+SETUPFILE: ../notes-style.org
-#+TITLE: Measurement
-
-[[../text-books.org][Text Book List]]
-

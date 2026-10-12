@@ -1,0 +1,15 @@
+#+title: About
+#+description: Alexander Phillips is a principal engineer in Silicon Valley who writes about American politics and classic menswear.
+
+I'm Alexander Phillips, a Principal Engineer in Silicon Valley.
+
+People in living in this area and working in this field have a reputation for being soulless and vile-- it's all true. We are heralding the end of the world one paycheck at a time.
+
+This site is where I write about things I'm thinking of, mostly American politics and classic menswear.
+
+# TODO: a paragraph only you can write: the clothes, the house, what you care about.
+
+* Elsewhere
+- Email :: [[mailto:mail@alexanderphillips.net][mail@alexanderphillips.net]]
+- Code :: [[https://github.com/Tatsuonline][github.com/Tatsuonline]]
+- Feed :: [[/rss.xml][RSS]]

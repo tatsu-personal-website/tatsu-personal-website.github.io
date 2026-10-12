@@ -1,0 +1,27 @@
+---
+// Standalone pages (About, Now, Commonplace) from content/pages/*.org
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { formatDate } from '../lib/essays';
+
+export async function getStaticPaths() {
+  const pages = await getCollection('pages', (p) => import.meta.env.DEV || !p.data.draft);
+  return pages.map((page) => ({ params: { page: page.id }, props: { page } }));
+}
+
+const { page } = Astro.props as { page: CollectionEntry<'pages'> };
+const { Content } = await render(page);
+---
+
+<Base title={page.data.title} description={page.data.description}>
+  <article class="essay">
+    <header class="essay-head">
+      <h1>{page.data.title}</h1>
+      {page.id === 'now' && page.data.date && <p class="meta">Updated {formatDate(page.data.date, 'month')}</p>}
+    </header>
+    <div class:list={['prose', 'page-prose', `${page.id}-page`]}>
+      <Content />
+    </div>
+  </article>
+</Base>
+

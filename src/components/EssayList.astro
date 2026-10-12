@@ -1,0 +1,25 @@
+---
+import { formatDate, type Essay } from '../lib/essays';
+
+interface Props {
+  essays: Essay[];
+  showDescription?: boolean;
+}
+const { essays, showDescription = false } = Astro.props;
+---
+
+<ul class="essay-list">
+  {
+    essays.map((essay) => (
+      <li>
+        <a href={`/essays/${essay.id}/`}>{essay.data.title}</a>
+        {essay.data.draft && <span class="draft-badge">Draft</span>}
+        {showDescription && essay.data.description && <p class="essay-dek">{essay.data.description}</p>}
+        <p class="meta">
+          {essay.data.category && <>{essay.data.category} · </>}
+          <time datetime={essay.data.date?.toISOString()}>{formatDate(essay.data.date, 'month')}</time>
+        </p>
+      </li>
+    ))
+  }
+</ul>

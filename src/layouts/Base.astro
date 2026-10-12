@@ -1,0 +1,87 @@
+---
+import '@fontsource/libre-caslon-text/400.css';
+import '@fontsource/libre-caslon-text/400-italic.css';
+import '@fontsource/libre-caslon-text/700.css';
+import '@fontsource/libre-caslon-display/400.css';
+import '../styles/global.css';
+import Monogram from '../components/Monogram.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+  type?: 'website' | 'article';
+}
+
+const SITE = 'Alexander Phillips';
+const { title, description = 'Essays on American politics and classic menswear.', type = 'website' } = Astro.props;
+const fullTitle = title ? `${title} · ${SITE}` : SITE;
+const path = Astro.url.pathname;
+const canonical = new URL(path, Astro.site);
+
+const nav = [
+  { href: '/essays/', label: 'Essays' },
+  { href: '/clothes/', label: 'Clothes' },
+  { href: '/commonplace/', label: 'Commonplace' },
+  { href: '/now/', label: 'Now' },
+  { href: '/about/', label: 'About' },
+];
+const isCurrent = (href: string) => path === href || (href !== '/' && path.startsWith(href));
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="alternate" type="application/rss+xml" title={SITE} href="/rss.xml" />
+    <meta name="theme-color" content="#F4EEE1" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#111A2C" media="(prefers-color-scheme: dark)" />
+    <meta property="og:type" content={type} />
+    <meta property="og:title" content={title ?? SITE} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content={SITE} />
+    <slot name="head" />
+  </head>
+  <body>
+    <div class="repp" aria-hidden="true"></div>
+    <header class="masthead page">
+      <a href="/" class="masthead-home" aria-label="Alexander Phillips, home"><Monogram /></a>
+      <nav aria-label="Main">
+        <ul>
+          {
+            nav.map(({ href, label }) => (
+              <li>
+                <a href={href} aria-current={isCurrent(href) ? 'page' : undefined}>
+                  {label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="colophon page">
+      <div class="double-rule"></div>
+      <div class="colophon-row">
+        <p class="colophon-note">Alex is human and can make mistakes.</p>
+        <p class="colophon-links">
+          <a href="/rss.xml">RSS</a>
+          <span aria-hidden="true">·</span>
+          <a href="mailto:mail@alexanderphillips.net">Email</a>
+          <span aria-hidden="true">·</span>
+          <a href="https://github.com/Tatsuonline">GitHub</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

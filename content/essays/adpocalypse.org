@@ -1,0 +1,113 @@
+#+title: Censorship in the Marketplace of Ideas
+#+date: [2020-10-25 Sun]
+#+category: Politics
+#+filetags: :censorship:advertising:chomsky:youtube:adpocalypse:
+
+* Introduction
+Over the last few years, the online video-sharing platform YouTube has been subject to a series of policy changes that have had a profound effect on the type of content and the types of ideas that are expressed or discussed by creators on the platform. Through examples and comparisons, I will attempt to argue that YouTube has fallen prey to the same fiscal compulsions that led to the censorship of printed media in the United States during its “golden era” of the early nineteenth century.
+
+* The “Golden Era” of Printed Media in the United States
+The early to mid 1800s was arguably the era when the press in the United States had the largest unhindered dissemination of unconventional or diverse ideas. The barrier to entry into publishing had lowered enough for several (typically marginalized and low income) communities to start their own newspapers or magazines to be distributed among a wide audience. During this time, several bilingual newspapers were produced by the German and Native American populations, along with some of the first African American papers[fn:1]. Such media produced by the working class for consumption by the working class allowed for important ideas, and quite often, social movements to develop and spread. The African American papers played a vital role in the rise of the abolitionist movement[fn:2] for example, while the alternative press of the working class allowed for greater class consciousness and worker unification[fn:3].
+
+What then occurred in the latter half of the nineteenth century that stymied this relative freedom in publishing? In their book /Manufacturing Consent/, Herman and Chomsky outline five filters that have helped create a propaganda model under which the United States media operates. These five filters are[fn:4]:
+
+1. The capital demand and owner wealth of media companies.
+2. The dependency on advertising for income.
+3. The uncritical acceptance of information provided by authorities.
+4. Punishment of the media through flak and criticism.
+5. The utilization of anti-communism as a method of control.
+
+Part of what they argue in the book is that these filters have successfully suppressed a significant portion of the ideas that entities in positions of power (corporations, advertisers, government officials, etc.) disagree with. In this article, we will only briefly cover the first two filters and its relevance when applied to a modern example later on.
+
+Regarding the first filter, the cost of starting a printing press was still expensive during the “golden era”, but it was far more affordable for the average citizen then as compared to even a few decades later[fn:5]. An often cited example is of the Lowell Mill Girls, where a community of underpaid women were able to publish a monthly magazine titled /The Lowell Offering/ in 1840. It included essays, poems and personal opinions and helped bring attention to the value of organizing and protesting among the women[fn:6]. The prohibitive cost of printing such a magazine even by the 1860s might have been beyond their means by then[fn:7].
+
+The second filter is even more interesting; the introduction of advertisements in papers as a means to subsidize the cost of production completely changed the economic playing field. While previously, the cost of production was covered in the price of the paper itself, adding advertisements allowed the paper to be sold at a fraction of the cost and allowed the additional capital to be used in other areas (such as appearance, quality, etc.) in order to further improve the circulation. Newspapers that did not include advertisements found themselves at a serious disadvantage, being unable to compete with the far cheaper options available[fn:8]. One might think that the obvious thing to do in this situation would be to accept advertisements in your paper to keep up competitively. However, advertisers will often only accept placing ads in newspapers or magazines that do not carry controversial content. Thus, the advertisers came to wield enough power to dictate what content the papers could print[fn:9].
+
+The suppression of ideas caused by these filters is not unique to the printed press. Similar factors seem to come into play when we look at a different medium with a more recent conception.
+
+* The “Golden Era” of YouTube
+The video-sharing platform YouTube (started in 2005) bears much resemblance to the “golden era” of press freedom in the United States of the 1850s. The financial cost is quite low for a new content creator to record a video and publish it on the platform where it has the potential to reach an extremely wide audience. This has allowed for videos on even the most obscure topics getting published on YouTube and made easily available for users who search for those topics.
+
+In the last few years, there has been a noticeable series of changes in YouTube policy that have suppressed content and ideas. Despite the creators conforming to the terms of service on YouTube, they find ads being pulled off their videos, their incomes dropping or their videos being suppressed entirely.
+
+In a similar fashion to the filters proposed by Herman and Chomsky as an explanation for the media propaganda model, I would like to propose four filters specific to YouTube that have been responsible for censoring content:
+
+1. The capital demand and owner wealth of content creators.
+2. The dependency on advertising for income.
+3. The uncritical acceptance of DMCA takedown notices.
+4. The YouTube algorithm suppressing videos.
+
+Let us go over each one in turn for a more detailed analysis of each.
+
+** Filter I: The capital demand and owner wealth of content creators.
+While the barrier to entry on a platform like YouTube is low, the barrier for visibility is quite high. When looking at the most viewed YouTube channel owners in 2020[fn:10], their videos all require a significant amount of capital investment. It's no secret that /better/ edited videos that are filmed with /better/ equipment tend to perform /better/ with regards to viewership and reach -- and corporations are able to out-spend any individual creator on YouTube.
+
+Studies show that younger generations are consuming most of their news through online media[fn:11], with about a quarter of adults in the United States getting their news from YouTube[fn:12]. This makes YouTube a very valuable platform for the dissemination of ideas. If a corporation or some other entity wishes to spread a message, they have the capital to invest in high-end videography equipment, editing software and the editors themselves.
+
+An example of this would be the success of the YouTube channel /PragerU/[fn:13], short for Prager University. Despite the name, it is not an academic institution, but rather a media organization promoting far-right propaganda. Raising more than $22 million in 2019 and also receiving large donations from fracking billionaires Dan and Farris Wilks[fn:14], PragerU has ample amounts of money to spend on creating high quality animated videos promoting their agenda. Several YouTubers have criticized PragerU for lacking evidence to back a number of the alarmist claims they have made and have accused the channel of espousing fascist rhetoric. However, these smaller channels that are critical of PragerU are unable to get a similar number of views (in part) due the comparatively lower production value of their videos. The average viewer is far more likely to see a PragerU video and accept it as fact than to see any of the videos critiquing it.
+
+** Filter II: The dependency on advertising for income.
+Video files consume vast amounts of server storage space and since users do not pay for using the site or uploading videos, YouTube needed a solution to at least break even if not earn a profit. As the popularity of the platform rose, YouTube postulated advertising concepts as early as August 2006 and launched the YouTube Partner Program in December 2007[fn:15].
+
+The introduction of advertising into YouTube was extremely significant and changed the way users viewed the platform; instead of creating videos as a hobby, content creators could make a career out of it and earn a living. Indeed, once earning enough of a salary through the Partner Program, many popular creators quit their jobs and switched to creating videos full-time (the term “YouTuber” started gaining traction as well). This in turn created a heavy dependency of the creators on the platform, making them subject to the business and engineering decisions that YouTube made daily and also to the demands of the advertisers. Several YouTubers, now under pressure to make entertaining content at a consistent rate would find themselves constantly creating content pushing the limit of acceptability and narrowly avoiding upsetting YouTube authorities.
+
+Prior to 2017, advertisers on YouTube did not have much of a say as to what videos their advertisements appeared on. The advertisements were primarily assigned based on the video content tags and viewer demographics of each YouTuber, with YouTube relying on users flagging a video if it contained any content violating the terms of service. Beginning in 2016, several YouTubers started noticing that advertisements were being removed from their videos, resulting in a large drop in their income. Under pressure from the community, YouTube released a statement denying that anything had changed, but this failed to satisfy the users -- some of whom had to go back to their previous jobs to earn a living wage once again.
+
+The largest advertising policy changes began in 2017 as a direct result of the actions of one of the most popular YouTubers, Felix Kjellberg, often referred to by his username /PewDiePie/. The Wall Street Journal reported on videos posted by Felix earlier that year in which he included anti-Semitic jokes[fn:16]. The resulting backlash caused Disney to break ties with Felix and pull their advertising from his videos, which in turn made YouTube panic. In an effort to prevent further advertiser boycotts, YouTube began the first so-called “adpocalypse” (a term the community used to describe the event) and started aggressively removing advertisements from any videos deemed problematic[fn:17].
+
+This event and subsequent “adpocalypses” had the effect of pushing creators to avoid posting or discussing controversial content. With a lot of YouTubers dependent on advertising revenue to sustain themselves, it simply wasn't worth the risk to post a video (requiring a lot of preparation and effort) that discussed a topic which was not “advertiser-friendly”. YouTubers actively started self-censoring themselves, even avoiding important discussions where they could critique or bring attention to content with veiled racist or fascist ideologies, for example.
+
+** Filter III: The uncritical acceptance of DMCA takedown notices.
+The Digital Millennium Copyright Act (DMCA) of 1998 is a United States copyright law intended to prevent the infringement and to exert creator control over copyrighted works across several different mediums. For the owner of the content in question, if they believe it is being used in a way not protected by the law, they can file a DMCA takedown against any website owner or online service provider.
+
+Unfortunately, the DMCA takedown has a long history of abuse on YouTube. Critique videos, which are a popular genre of videos on the platform, often require including portions of the content that is being critiqued. The use of copyrighted content in this way is covered under the fair use doctrine in United States law, however, several creators wishing to avoid criticism will often file DMCA takedown notices against their critics to silence them. There is often no consequences for the filer of the notice despite clear dishonesty[fn:18] and can result in a lengthy (and expensive) legal battle from the defendant to prove that the content was used fairly.
+
+With the number of DMCA notices filed and the amount of content required to review to make determinations, YouTube often does not review the claims in depth. Instead, as soon as a notice is filed, the content in question is usually removed by YouTube immediately until the situation is cleared. This can lead to financial damages for the defendant in the mean time and is a major discouraging factor for a lot of YouTubers when deciding whether or not to critique content.
+
+** Filter IV: The YouTube algorithm suppressing videos.
+Content creators on YouTube have long been subject to the whims of the algorithm (broadly referring to the collection of algorithms) that YouTube uses for recommending videos to viewers. Even minute changes to the algorithm can result in large ramifications that can affect the livelihoods of the users on the platform. YouTube isn't very transparent about how the algorithm works; in a 2016 paper, several Google engineers gave an extremely vague explanation of the system architecture utilizing deep learning models[fn:19], but this does little to specify the intricacies involved. This secrecy has resulted in several creators attempting to “game” the algorithm and experimenting with different methods to increase viewership over producing interesting content.
+
+Additional issues arise when the algorithms are used for performing checks on uploaded videos. Again, due to the large amount of video content uploaded to YouTube, a manual review of the content for terms of service violations or advertiser-friendly content is unfeasible. Leaving content acceptability up to the discretion of deep learning algorithms creates problems since these algorithms are unable to determine intent through context. Where video footage is analyzed, it leads to situations where YouTubers discussing history are forced to take extra steps to blur problematic symbols from footage (such as Nazi symbolism, etc.). Audio analysis can be even more of a problem, where even discussing such controversial topics can lead to the algorithms flagging these videos -- which has led to the careful wording of topics, the avoidance of swear words and other forms of self-censorship.
+
+* Closing Notes
+The filters outlined above have had a large affect primarily on the type of content being produced and discussed on the platform. As YouTube is an important source of information for the general population, it is vital to prevent such forms of censorship for the benefit of the content creators and consumers.
+
+Thank you for reading.
+
+[fn:1] Overholser, Geneva and Kathleen Hall Jamieson, /The Institutions of American Democracy: The Press/, Oxford University Press, USA, 2005, p. 22.
+
+[fn:2] Overholser, Geneva and Kathleen Hall Jamieson, /The Institutions of American Democracy: The Press/, Oxford University Press, USA, 2005, p. 22.
+
+[fn:3] James Curran and Jean Seanton, /Power Without Responsibility: The Press and Broadcasting in Britain/, 2nd ed. (London: Methuan, 1985), p. 24.
+
+[fn:4] Edward S. Herman and Noam Chomsky, /Manufacturing Consent: The Political Economy of Mass Media/, Pantheon Books, USA, 2002, p. 2.
+
+[fn:5] James Curran and Jean Seanton, /Power Without Responsibility: The Press and Broadcasting in Britain/, 2nd ed. (London: Methuan, 1985), pp. 38-39.
+
+[fn:6] Dublin, Thomas. “Women, Work, and Protest in the Early Lowell Mills.” Smithsonian Institute (accessed via The Wayback Machine), [[https://web.archive.org/web/20090227063040/http://invention.smithsonian.org/centerpieces/whole_cloth/u2ei/u2materials/dublin.html][Link]]. Accessed 24 Oct. 2020.
+
+[fn:7] James Curran and Jean Seanton, /Power Without Responsibility: The Press and Broadcasting in Britain/, 2nd ed. (London: Methuan, 1985), pp. 38-39.
+
+[fn:8] Edward S. Herman and Noam Chomsky, /Manufacturing Consent: The Political Economy of Mass Media/, Pantheon Books, USA, 2002, p. 14.
+
+[fn:9] Edward S. Herman and Noam Chomsky, /Manufacturing Consent: The Political Economy of Mass Media/, Pantheon Books, USA, 2002, p. 14.
+
+[fn:10] Clement, J. “All-Time Most Viewed YouTube Channel Owners 2020 | Statista.” Statista, [[https://www.statista.com/statistics/373753/most-viewed-youtubers-all-time/][Link]]. Accessed 24 Oct. 2020.
+
+[fn:11] Antonis Kalogeropoulos, /How Younger Generations Consume News Differently/, Reuters Institute for the Study of Journalism, UK, 2019, p. 54.
+
+[fn:12] Galen Stocking, Patrick van Kessel, Michael Barthel, Katerina Eva Matsa and Maya Khuzam, “Many Americans Get News on YouTube, Where News Organizations and Independent Producers Thrive Side by Side”, [[https://www.journalism.org/2020/09/28/many-americans-get-news-on-youtube-where-news-organizations-and-independent-producers-thrive-side-by-side/][Link]]. Accessed 24 Oct. 2020.
+
+[fn:13] [[https://www.youtube.com/channel/UCZWlSUNDvCCS1hBiXV0zKcA][PragerU YouTube Channel.]]
+
+[fn:14] Nellie Bowles, “Right-Wing Views for Generation Z, Five Minutes at a Time”, The New York Times, [[https://www.nytimes.com/2020/01/04/us/politics/dennis-prager-university.html][Link]]. Accessed 25 Oct. 2020.
+
+[fn:15] Press at Google, “History of Monetization at YouTube”, [[https://sites.google.com/a/pressatgoogle.com/youtube5year/home/history-of-monetization-at-youtube][Link]]. Accessed 24 Oct. 2020.
+
+[fn:16] Rolfe Winkler, Jack Nicas and Ben Fritz, “Disney Severs Ties With YouTube Star PewDiePie After Anti-Semitic Posts”, [[https://www.wsj.com/articles/disney-severs-ties-with-youtube-star-pewdiepie-after-anti-semitic-posts-1487034533][Link]]. Accessed 25 Oct. 2020.
+
+[fn:17] Julia Alexander, “The Golden Age of YouTube is Over”, [[https://www.theverge.com/2019/4/5/18287318/youtube-logan-paul-pewdiepie-demonetization-adpocalypse-premium-influencers-creators][Link]]. Accessed 25 Oct. 2020.
+
+[fn:18] Cobia, Jeffrey (2008). “The Digital Millennium Copyright Act Takedown Notice Procedure: Misuses, Abuses, and Shortcomings of the Process”. Minnesota Journal of Law Science & Technology. 1: 391--393. [[https://heinonline.org/HOL/LandingPage?handle=hein.journals/mipr10&div=&id=391&page=][Link]]
+
+[fn:19] Paul Covington, Jay Adams, Emre Sargin, “Deep Neural Networks for YouTube Recommendations”, [[https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/45530.pdf][Link]]. Accessed 25 Oct. 2020.

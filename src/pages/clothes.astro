@@ -1,0 +1,23 @@
+---
+import Base from '../layouts/Base.astro';
+import EssayList from '../components/EssayList.astro';
+import { getEssays } from '../lib/essays';
+
+const essays = (await getEssays()).filter((e) => e.data.category?.toLowerCase() === 'clothes');
+---
+
+<Base title="Clothes" description="Notes on Ivy style and classic American menswear.">
+  <div class="page">
+    <header class="index-head">
+      <h1>Clothes</h1>
+      <p>Notes on Ivy style and classic American menswear.</p>
+    </header>
+    {
+      essays.length ? (
+        <EssayList essays={essays} showDescription />
+      ) : (
+        <p class="empty-state">The first piece is on the ironing board.</p>
+      )
+    }
+  </div>
+</Base>

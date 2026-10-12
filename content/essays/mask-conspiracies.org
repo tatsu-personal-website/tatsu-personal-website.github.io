@@ -1,0 +1,117 @@
+#+title: Mask Usage Conspiracy Theories
+#+date: [2020-11-21 Sat]
+#+category: Politics
+#+filetags: :coronavirus:covid_19:masks:conspiracies:
+
+/Note: I am not a medical professional and I have no background in medical science; please consult public health agencies like the CDC or WHO for actual medical information. This post was just written for a co-worker./
+
+* Introduction
+Recently, I had a discussion with a co-worker who told me that there was a lot of misinformation going around about mask usage and that he believed that masks were ineffective-- or at least not as effective as public health agencies claim. He gave a few points as evidence and asked me to look into them:
+
+1. A recent Danish mask study (DANMASK-19) showed that there was no correlation between mask usage and a reduction in the spread of infections.
+2. Sweden has been very successful in combating the rate of infections despite not implementing mask recommendations or lockdowns.
+3. He claimed that when you wear a mask and are infected, you are just re-breathing the virus over and over and letting it multiply.
+
+I shall go through each in turn and discuss if the claims hold up under scrutiny.
+
+* Why The Recommendation To Wear Masks?
+Why do public health agencies like the /Centers for Disease Control and Prevention/ and the /World Health Organization/ recommend wearing masks (surgical and even multi-layered cloth ones) in the first place?
+
+According the CDC's Scientific Brief on mask usage, the primary benefit is due to the fact that masks block between 50-70% of exhaled respiratory particles into the environment, along with the microorganisms these particles carry[fn:1]. Wearing a mask essentially works as a barrier that helps with source control; it assists in preventing the spread of the virus from infected people to others (especially useful when the infected people are asymptomatic). To a lesser extent, the masks can also help with filtration for personal protection, although the effectiveness here varies widely depending on the experimental design and particle size[fn:2].
+
+** Studies Showing Mask Effectiveness
+The CDC has compiled a *huge* list of global studies showing very strong evidence for the benefits of mask usage on their website[fn:3]. I will list some of the highlights of a few of them (click on each for the full study):
+
+*** [[https://www.cell.com/matter/fulltext/S2590-2385(20)30364-7?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS2590238520303647%3Fshowall%3Dtrue][/Quantitative Method for Comparative Assessment of Particle Removal Efficiency of Fabric Masks as Alternatives to Standard Surgical Masks for PPE/]]
+From the listed highlights:
+
+- Surgical masks removed 53%--75% of particles <300 nm from air when worn as designed.
+- Cloth masks ranged in particle removal efficiency from 28% to 91% when worn as designed.
+- A nylon overlayer improved particle removal efficiency of many masks by minimizing gaps.
+
+*** [[https://pubmed.ncbi.nlm.nih.gov/32673300/][/Absence of Apparent Transmission of SARS-CoV-2 from Two Stylists After Exposure at a Hair Salon with a Universal Face Covering Policy/]]
+Case study highlights:
+
+- Two stylists developed respiratory symptoms (and subsequently tested positive for the SARS-CoV-2).
+- A total of 139 clients were directly serviced by these stylists from the time they developed symptoms until they took leave from work.
+- Face masks were required to be worn by the stylists and clients during their interactions.
+- No symptoms of COVID-19 were identified among the 139 exposed clients or their secondary contacts.
+
+*** [[https://doi.org/10.1086/600041][/A Quantitative Assessment of the Efficacy of Surgical and N95 Masks to Filter Influenza Virus in Patients with Acute Influenza Infection/]]
+Highlights:
+
+- Influenza virus is a well-recognized nosocomial pathogen spread from person to person through transmission via large droplets (droplet transmission), small particle aerosols (airborne transmission), or direct and indirect contact (contact transmission).
+- Surgical and N95 masks appeared to be equally effective in filtering influenza, given that no influenza could be detected by RT-PCR of the ISP viral transport medium in any of the participants (that previously tested positive for the virus) for either mask.
+
+* Does The Recent Danish Mask Study (DANMASK-19) Show Low Effectiveness For Mask Usage?
+The /Annals of Internal Medicine/ recently published (18 November, 2020) an article titled [[https://www.acpjournals.org/doi/10.7326/M20-6817][/Effectiveness of Adding a Mask Recommendation to Other Public Health Measures to Prevent SARS-CoV-2 Infection in Danish Mask Wearers/]], which, in short, was a randomized controlled trial to determine whether *recommending surgical mask use* outside a person's home reduced their risk of infection of the SARS-CoV-2 virus. The authors specify that the trial was performed in an area where masks were “uncommon and not recommended public health measures”[fn:4].
+
+From the published article and study record of the trial[fn:5], we can obtain some key information:
+
+1. The study was performed over a two month period (from April 2, 2020 until June 2, 2020) and the outcome measures were checked over a one month time frame (April 3, 2020 to May 2, 2020).
+2. It involved over 6000 participants (6024 in total; 3030 randomly assigned to wear masks and 2994 assigned to control).
+3. The requirements for the participants were to not have tested positive for the coronavirus, spend more than three hours outside their home each day and who do not wear a mask for daily work.
+4. The effectiveness of mask recommendations at the start of the study was hypothesized to be 50%.
+5. After a month, infection with SARS-CoV-2 occurred in 42 participants recommended masks (1.8%) and 53 control participants (2.1%).
+6. The between-group difference was −0.3 percentage point (95% CI, −1.2 to 0.4 percentage point; P = 0.38) (odds ratio, 0.82 [CI, 0.54 to 1.23]; P = 0.33).
+7. The patients reported the results of their own home tests for the coronavirus.
+
+Right away, we can see the problem with the claim that this study shows low effectiveness for mask usage: the study isn't even checking for that. The stated objective in the study is to see if recommending surgical mask use made a difference in their chances of getting infected. Since the confidence interval (CI) crosses 1, the difference is determined to be statistically negligible. If this study was supposed to measure the effectiveness in mask usage, it would have to:
+
+- Determine approximately when the people who tested positive for the coronavirus caught it.
+- Focus on the section of the above group who were randomly assigned to wear masks.
+- Test the people they came into contact with after catching it and determine the number of those people who caught it from them (contact tracing).
+
+The accompanying editorial on the study in /Annals of Internal Medicine/ by Christine Laine (and others) titled [[https://www.acpjournals.org/doi/10.7326/m20-7448][/The Role of Masks in Mitigating the SARS-CoV-2 Pandemic: Another Piece of the Puzzle/]] foresaw a lot of the problems that would arise from people misinterpreting the purpose of the study and the results. The opening paragraph itself states /“we must first emphasize that this trial does not address the first question about transmission in communities where most people wear masks and *does not disprove the effectiveness of widespread mask wearing*."/. The authors go on to explain that despite the assumed effectiveness goal was 50% and that was not reached, it should be noted that the effects were statistically compatible with a 46% decrease to a 23% increase in infection-- meaning it excludes a large personal protective effect.
+
+In another paragraph, the authors tackle the question of whether it is irresponsible to publish the results of the study since they realize it could easily be misused by those opposed to mask recommendations, but decide that it is still important to publish the study in order to gather as much information as possible to tackle the pandemic.
+
+* How Has Sweden Been So Successful Without Implementing Mask Recommendations or Lockdowns?
+At the start of the pandemic, Sweden took a notoriously lighter strategy than many other countries and did not implement lockdown measures, mask mandates and only “recommended” social distancing in public places. It is not clear by what metric the proponents of the Swedish response are claiming it as a success, since by all accounts it seems to have failed. Here are some quick points:
+
+- An analysis of the first eight months of Sweden's pandemic response found that by September 1, 2020, “0.8% of Swedish residents had tested positive for the virus and 0.06% of the population had died, which was higher than neighboring Nordic countries, but lower than some European countries with general lockdowns”[fn:6].
+- An economic analysis of Sweden's GDP found that it fell 8.6% in the second quarter of the year, quite a bit sharper than its neighbors (such as Finland, which had a 3.2% fall) despite its no-lockdown policy[fn:7].
+- Even as far back as June, when Anders Tegnell (Sweden's chief epidemiologist and co-architect of the Swedish pandemic response) was asked if his country's high death toll-- at that point already one of the highest per capita death rates in the world-- made him reconsider his unique approach to the pandemic, he responded “yes, absolutely”[fn:8].
+- Sweden is abandoning their previous model and has now banned gatherings of more than eight people and included other protective measures around nursing homes, restaurants and bars[fn:9].
+- Despite politicians in the United States praising the Swedish approach, Swedish officials insisted that their methods work in Sweden because most Swedes would voluntarily heed social distancing guidelines and that this approach might not be replicable elsewhere[fn:10].
+- Swedish scientists have voiced concern on their country's pandemic response from the start[fn:11] with some like Swedish virologist Lena Einhorn calling the strategy a “dramatic failure”[fn:12].
+
+As of November 22, 2020, Sweden has a rolling seven day average of 618.2 new coronavirus cases per 1,000,000 residents, which is higher than the 530.2 cases per 1,000,000 for the United States (which is frequently criticized for their poor pandemic response) and every other country that implemented a strong response with lockdown, mask mandates and social distancing (Australia is at 0.7, New Zealand is at 1.9, South Korea is at 6.4, etc.)[fn:13].
+
+* When You Wear A Mask And Are Infected, Aren't You Just Breathing In The Virus And Letting It Multiply?
+While there is a correlation between the initial viral load and mortality (also tied to duration of the exposure)[fn:14], there seems to be no evidence to indicate that after infection, you can increase the viral load by breathing in a mask.
+
+Some points to note are that wearing a mask actually helps reduce the initial viral load (albeit partially) and virus shedding appears to stop after a set period of time, around 14 days[fn:15].
+
+* Closing Notes
+I think the evidence quite clearly speaks for itself; masks are effective and serve a valuable purpose in reducing the spread of the SARS-CoV-2 virus.
+
+[fn:1] /Unknown Author/, “Scientific Brief: Community Use of Cloth Masks to Control the Spread of SARS-CoV-2”, Center for Disease Control and Prevention, [[https://www.cdc.gov/coronavirus/2019-ncov/more/masking-science-sars-cov2.html?fbclid=IwAR28PppCa6x2uxwO8Z2baHM0KHS4JXx0inzzMQs3zRHV1qql_0a8mxZfpCw][Link]]. Accessed 21 Nov. 2020.
+
+[fn:2] /Unknown Author/, “Scientific Brief: Community Use of Cloth Masks to Control the Spread of SARS-CoV-2”, Center for Disease Control and Prevention, [[https://www.cdc.gov/coronavirus/2019-ncov/more/masking-science-sars-cov2.html?fbclid=IwAR28PppCa6x2uxwO8Z2baHM0KHS4JXx0inzzMQs3zRHV1qql_0a8mxZfpCw][Link]]. Accessed 21 Nov. 2020.
+
+[fn:3] /Unknown Author/, “Considerations for Wearing Masks”, Center for Disease Control and Prevention, [[https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover-guidance.html][Link]]. Accessed 21 Nov. 2020.
+
+[fn:4] /Bundgaard et al./, “Effectiveness of Adding a Mask Recommendation to Other Public Health Measures to Prevent SARS-CoV-2 Infection in Danish Mask Wearers”, Annals of Internal Medicine, [[https://www.acpjournals.org/doi/10.7326/M20-6817][Link]]. Accessed 21 Nov. 2020.
+
+[fn:5] /Bundgaard et al./, “Reduction in COVID-19 Infection Using Surgical Facial Masks Outside the Healthcare System”, ClinicalTrials.gov, [[https://clinicaltrials.gov/ct2/show/NCT04337541][Link]]. Accessed 21 Nov. 2020.
+
+[fn:6] /Ludvigsson, Jonas/, “The first eight months of Sweden's COVID‐19 strategy and the key actions and actors that were involved.”, Acta Paediatrica, [[https://onlinelibrary.wiley.com/doi/10.1111/apa.15582][Link]]. Accessed 21 Nov. 2020.
+
+[fn:7] /Baker, Sinéad/, “Sweden's GDP slumped 8.6% in Q2, more sharply than its neighbors despite its no-lockdown policy.”, Business Insider, [[https://www.businessinsider.com/coronavirus-sweden-gdp-falls-8pc-in-q2-worse-nordic-neighbors-2020-8][Link]]. Accessed 21 Nov. 2020.
+
+[fn:8] /Keyton, David/, “Sweden's top epidemiologist acknowledges pandemic response could have been better.”, Anchorage Daily News, [[https://www.adn.com/nation-world/2020/06/03/swedens-top-epidemiologist-admits-pandemic-response-should-have-gone-deeper/][Link]]. Accessed 21 Nov. 2020.
+
+[fn:9] /Tharoor, Ishaan/, “Has Sweden's coronavirus strategy failed?”, The Washington Post, [[https://www.washingtonpost.com/world/2020/11/18/sweden-coronavirus-surge-policy/][Link]]. Accessed 21 Nov. 2020.
+
+[fn:10] /Tharoor, Ishaan/, “Has Sweden's coronavirus strategy failed?”, The Washington Post, [[https://www.washingtonpost.com/world/2020/11/18/sweden-coronavirus-surge-policy/][Link]]. Accessed 21 Nov. 2020.
+
+[fn:11] /Unknown Author/, “Science Forum COVID-19”, Vetenskapsforum Covid 19, [[https://vetcov19.se/en/][Link]]. Accessed 21 Nov. 2020.
+
+[fn:12] /Tharoor, Ishaan/, “Has Sweden's coronavirus strategy failed?”, The Washington Post, [[https://www.washingtonpost.com/world/2020/11/18/sweden-coronavirus-surge-policy/][Link]]. Accessed 21 Nov. 2020.
+
+[fn:13] /Ritchie et al./, “Coronavirus Pandemic (COVID-19)”, Our World in Data, [[https://ourworldindata.org/coronavirus][Link]]. Accessed 21 Nov. 2020.
+
+[fn:14] /Pujadas et al./, “SARS-CoV-2 viral load predicts COVID-19 mortality.”, The Lancet, [[https://www.thelancet.com/journals/lanres/article/PIIS2213-2600(20)30354-4/fulltext][Link]]. Accessed 21 Nov. 2020.
+
+[fn:15] /Unknown Author/, “Coronavirus disease 2019 (COVID-19) Situation Report -- 73”, World Health Organization, [[https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200402-sitrep-73-covid-19.pdf?sfvrsn=5ae25bc7_6][Link]]. Accessed 21 Nov. 2020.

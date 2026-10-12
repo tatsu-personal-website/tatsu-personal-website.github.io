@@ -1,0 +1,39 @@
+---
+import { getEntry, render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import EssayList from '../components/EssayList.astro';
+import { formatDate, getEssays } from '../lib/essays';
+
+const essays = await getEssays();
+const now = await getEntry('pages', 'now');
+const { Content: Now } = now ? await render(now) : { Content: null };
+---
+
+<Base>
+  <div class="page">
+    <section class="hero">
+      <h1 class="hero-name">Alexander Phillips</h1>
+      <p class="hero-tagline">Principal engineer in Silicon Valley. Essays on American politics and classic menswear.</p>
+    </section>
+
+    <div class="double-rule"></div>
+
+    <div class="home-grid">
+      <section aria-labelledby="recent">
+        <h2 id="recent" class="label">Recent essays</h2>
+        <EssayList essays={essays.slice(0, 6)} />
+        <a class="more-link" href="/essays/">All essays</a>
+      </section>
+
+      {
+        Now && (
+          <aside class="now-box" aria-labelledby="now">
+            <h2 id="now" class="label label-green">Now</h2>
+            <Now />
+            {now?.data.date && <p class="meta">Updated {formatDate(now.data.date, 'month')}</p>}
+          </aside>
+        )
+      }
+    </div>
+  </div>
+</Base>

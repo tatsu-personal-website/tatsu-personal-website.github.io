@@ -1,0 +1,46 @@
+---
+import 'katex/dist/katex.min.css';
+import { render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Monogram from '../../components/Monogram.astro';
+import { categoryPath, formatDate, getEssays, type Essay } from '../../lib/essays';
+
+export async function getStaticPaths() {
+  const essays = await getEssays();
+  return essays.map((essay) => ({ params: { slug: essay.id }, props: { essay } }));
+}
+
+const { essay } = Astro.props as { essay: Essay };
+const { title, subtitle, date, updated, category, tags, description } = essay.data;
+const { Content } = await render(essay);
+---
+
+<Base title={title} description={description} type="article">
+  <article class="essay">
+    <header class="essay-head">
+      {
+        category && (
+          <p class="label">
+            <a href={categoryPath(category)}>{category}</a>
+          </p>
+        )
+      }
+      <h1>{title}</h1>
+      {subtitle && <p class="essay-subtitle">{subtitle}</p>}
+      <p class="meta">
+        <time datetime={date?.toISOString()}>{formatDate(date)}</time>
+        {updated && <> · Revised {formatDate(updated)}</>}
+      </p>
+    </header>
+
+    <div class="prose essay-body">
+      <Content />
+    </div>
+
+    <footer class="essay-foot">
+      <div class="end-mark"><Monogram size="sm" /></div>
+      {tags.length > 0 && <p class="tags">Filed under {tags.map((t) => t.replaceAll('_', ' ')).join(', ')}</p>}
+      <a class="back-link" href="/essays/">All essays</a>
+    </footer>
+  </article>
+</Base>

@@ -1,0 +1,29 @@
+---
+import Base from '../../layouts/Base.astro';
+import EssayList from '../../components/EssayList.astro';
+import { getEssays, type Essay } from '../../lib/essays';
+
+const essays = await getEssays();
+const byYear = new Map<number, Essay[]>();
+for (const essay of essays) {
+  const year = essay.data.date?.getUTCFullYear() ?? 0;
+  byYear.set(year, [...(byYear.get(year) ?? []), essay]);
+}
+---
+
+<Base title="Essays" description="Essays on American politics, classic menswear, and the occasional equation.">
+  <div class="page">
+    <header class="index-head">
+      <h1>Essays</h1>
+      <p>On American politics, classic menswear, and the occasional equation.</p>
+    </header>
+    {
+      [...byYear].map(([year, list]) => (
+        <section class="year-group">
+          <h2>{year || 'Undated'}</h2>
+          <EssayList essays={list} showDescription />
+        </section>
+      ))
+    }
+  </div>
+</Base>

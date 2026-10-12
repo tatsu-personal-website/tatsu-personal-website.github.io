@@ -1,0 +1,102 @@
+#+title: Why Are Californians Moving to Texas?
+#+date: [2021-01-07 Thu]
+#+category: Politics
+#+filetags: :california:texas:politics:propaganda:
+
+* Introduction
+I was recently sent a comedic video ([[https://www.youtube.com/watch?v=nlLcBQPQ96Q&feature=youtu.be]]) from a friend and I noticed a lot of issues in the topics discussed as jokes. I thought it would be worth it to go through some of them and see if they hold up against the facts. I have divided up the points into some smaller claims made throughout the video and a larger one that is the real issue to be discussed.
+
+* Smaller Quick Claims
+These are some quick rebuttals of some of the more important claims being made in the video.
+
+** Timestamp 00:02 - 00:14
+The argument he makes here is that Californians like the freedom of Texas, but then push to restrict those freedoms by insisting that Texans wear their masks correctly.
+
+California is certainly more strict than Texas when it comes to wearing masks and for good reason. Texas has overtaken California as the state with the most coronavirus infections, despite having about 10.5 million fewer people[fn:1].
+
+Remember that mask usage isn't about freedom, it is about saving lives (check my previous blog post for more information on the efficacy of mask usage[fn:2]). The sooner we stop the spread of the virus, the sooner we can all stop wearing masks. /No one enjoys wearing them./
+
+** Timestamp 00:17 - 00:20
+California definitely has a homeless crisis. This point will be addressed further below.
+
+** Timestamp 00:21 - 00:23
+His argument here is that Californians will seek to take down Confederate monuments in Texas.
+
+First of all, California still has several Confederate monuments as of writing this post[fn:3], so they are doing a pretty bad job of taking them down even here. The question of whether the statues /should/ be taken down is a much larger topic that would deserve its own post. I think the issue mostly boils down to misinformation: Confederate monuments are not really the historical monuments they are portrayed as; most were put up by the rich women in the “United Daughters of the Confederacy” long after the Civil War. Another point to note is that most people who advocate the removal of the monuments are in favor of placing them in museums and not destroying them. The entire pro-Confederacy and “Lost Cause” movements are full of misinformation, but I'll skip going into it here to reduce the size of this post.
+
+The statue he shows in the video is of Sam Houston (who, even in gushing articles on him by Texans admit that he was a “slave-holding racist” and the “most grandiose imperialist of his time”[fn:4]), after whom the city of Houston is named after. I doubt this monument would be on the list of statues that need to be removed quickly.
+
+** Timestamp 00:29 - 00:32
+Here, his argument is that Californians are moving to Texas because California is overcrowded.
+
+The population density in California isn't as bad as it is portrayed[fn:5] (not too far from Texas either), also “millions” are not relocating, that's ridiculous. Most estimates are at around 86,000 in 2018, for example[fn:6].
+
+** Timestamp 00:42 - 00:45
+Yes, housing prices will likely increase if there is more demand, but it is unlikely to increase anywhere near Californian house prices (the reasons for which are discussed below).
+
+** Timestamp 00:58 - 1:01
+The word “Communism” gets thrown around a lot as a remnant of Cold War-era propaganda. Communism has a very specific meaning with key requirements and California is /nowhere/ near a Communist society (and neither are the usual countries that are listed as examples).
+
+** Timestamp 1:10 - 1:13
+Has the influx of Californians caused a change in Austin's political views?
+
+Well, Austin was known for liberal views as far back as the 1970s[fn:7], so I doubt it.
+
+** Timestamp 1:50 - 1:53
+It's hard to claim that homeless people in Texas are doing well when the statistics show at least 25,848 people experience homelessness in Texas[fn:8]. Still, it is doing better than California percentage-wise[fn:9].
+
+* The Larger Problem To Address: Why Are Californians Moving To Texas?
+Polls show that the most frequent reason given for wanting to move out of California is the high cost of housing (71%), while conservatives also prominently mention high taxes (58%) and the state's political culture (46%)[fn:10]. Let's address the first two, since those are more important.
+
+The obscenely high cost of housing in California is undeniable, but why is it so high? This turns out to be a very complicated issue, but the three main factors are:
+
+1. Outdated Zoning Laws.
+
+If there is a lack of housing, why not build more housing? The old zoning laws in California are very restrictive, especially for apartments[fn:11] and this creates a massive shortage in available housing, driving the prices up.
+
+1. California's infamous Proposition 13.
+
+In 1978, California voted to enact the (now infamous) Proposition 13. Proposition 13 set the property values to their 1975 worth and restricted the yearly increase of assessments to 2 percent. This overwhelmingly favors long-time home owners and makes it inexpensive to hold large amounts of land and not sell it. When taxes go up on property, it /“incentivizes development, increases holding costs and makes it expensive to hold vacant”/[fn:12].
+
+1. Lawmakers unwilling to change the current situation.
+
+There have been multiple attempts from the public to push for changes to repeal Proposition 13, with Proposition 15 being the closest[fn:13]. However, it is key to note that house owners have profited greatly from the current status quo and have no incentive to change things[fn:14] and most of the lawmakers in California are homeowners.
+
+There are possibly more factors, but these three are likely the highest contributing issues.
+
+Okay, so what about the high taxes? The tax rate is indeed the highest in California compared to every other state... if you are extremely rich. When people say that Californian taxes are insanely high, they are referring to the is 12.30% if you earn $599,012 and over[fn:15]. The people leaving California for Texas are poor earners-- mostly in the $15,000 to $30,000 range[fn:16] where they would be in the 4% tax bracket (which is pretty much average in the country).
+
+* Conclusions
+Anyway, the bottom line is this: there is way too much misinformation going around in order to subtly push political views. The people leaving California for Texas seem to be low earners who cannot afford the housing (due to the laws maintained by those who profit from it) and actually hold conservative views, so are unlikely to change voting demographics by as much as is fear-mongered.
+
+[fn:1] [[https://www.forbes.com/sites/carlieporterfield/2020/11/01/texas-overtakes-california-as-state-with-the-most-coronavirus-infections-with-more-than-950000-total-cases/?sh=50b9e766c7f1]]
+
+[fn:2] [[/essays/mask-conspiracies/][Mask Usage Conspiracy Theories]]
+
+[fn:3] [[https://en.wikipedia.org/wiki/List_of_Confederate_monuments_and_memorials#California]]
+
+[fn:4] [[https://www.texasmonthly.com/the-culture/sam-houston-warts-and-all/]]
+
+[fn:5] [[https://www.statista.com/statistics/183588/population-density-in-the-federal-states-of-the-us/]]
+
+[fn:6] [[https://www.city-journal.org/liberal-austin-becoming-statewide-model]]
+
+[fn:7] [[https://www.usich.gov/homelessness-statistics/tx/]]
+
+[fn:8] [[https://www.usich.gov/homelessness-statistics/tx/]]
+
+[fn:9] [[https://www.usich.gov/tools-for-action/map/#fn]][]=1400&fn[]=2800&fn[]=6200&fn[]=10000&fn[]=13200&all_types=true&year=2019
+
+[fn:10] [[https://escholarship.org/uc/item/96j2704t]]
+
+[fn:11] [[https://www.brookings.edu/wp-content/uploads/2019/07/20190711_metro_Is-California-Apartment-Market-Broken-Schuetz-Murray.pdf?te=1&nl=california-today&emc=edit_ca_20190821?campaign_id=49&instance_id=11795&segment_id=16347&user_id=9263620866610033b2fed10bea50c91f&regi_id=85329297]]
+
+[fn:12] [[https://www.kqed.org/news/11700683/too-few-homes-is-proposition-13-to-blame-for-californias-housing-shortage]]
+
+[fn:13] [[https://calmatters.org/politics/california-election-2020/2020/11/california-so-liberal-prop-13-tax-revolt-prop-15/]]
+
+[fn:14] [[https://www.ppic.org/publication/proposition-13-40-years-later/]]
+
+[fn:15] [[https://www.ftb.ca.gov/about-ftb/newsroom/tax-news/november-2020/standard-deductions-exemption-amounts-and-tax-rates-for-2020-tax-year.html]]
+
+[fn:16] [[https://lao.ca.gov/LAOEconTax/Article/Detail/265]]
