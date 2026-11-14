@@ -1,0 +1,14 @@
+#+title: Now
+# Newest entry first. When something changes, copy the latest entry into a new
+# dated heading above it and edit that; older entries become the archive.
+# A heading may add a label after the date: * [2026-11-20 Fri] Winter reading
+
+* [2026-11-13 Fri]
+- Reading :: [[https://www.gutenberg.org/ebooks/71865][/Mrs. Dalloway/]] by Virginia Woolf
+- Wearing :: Navy hopsack blazer, oxford cloth button-down, repp tie, gray pleated pants, black penny loafers.
+- Building :: This website!
+
+* [2026-10-12 Mon]
+- Reading :: [[https://www.gutenberg.org/ebooks/39293][/The Gentlemen's Book of Etiquette and Manual of Politeness/]] by Cecil B. Hartley
+- Wearing :: Navy hopsack blazer, oxford cloth button-down, repp tie, gray pleated pants, black penny loafers.
+- Building :: This website!

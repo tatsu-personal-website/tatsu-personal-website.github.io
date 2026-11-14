@@ -1,0 +1,54 @@
+---
+import { render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { formatDate } from '../lib/essays';
+import { getNowEntries } from '../lib/now';
+
+const entries = await Promise.all(
+  (await getNowEntries()).map(async (entry) => ({ entry, Content: (await render(entry)).Content })),
+);
+const [current, ...previous] = entries;
+---
+
+<Base title="Now" description="What I'm reading, wearing, and working on.">
+  <article class="essay">
+    <header class="essay-head">
+      <h1>Now</h1>
+      {
+        current && (
+          <p class="meta">
+            Updated {formatDate(current.entry.data.date)}
+            {current.entry.data.label && <> · {current.entry.data.label}</>}
+          </p>
+        )
+      }
+    </header>
+
+    {
+      current && (
+        <div class="prose now-page">
+          <current.Content />
+        </div>
+      )
+    }
+
+    {
+      previous.length > 0 && (
+        <section class="now-archive" aria-labelledby="previously">
+          <h2 id="previously" class="label">Previously</h2>
+          {previous.map(({ entry, Content }) => (
+            <section class="now-entry">
+              <h3>
+                <time datetime={entry.data.date.toISOString().slice(0, 10)}>{formatDate(entry.data.date)}</time>
+                {entry.data.label && <span class="now-label"> · {entry.data.label}</span>}
+              </h3>
+              <div class="prose now-page">
+                <Content />
+              </div>
+            </section>
+          ))}
+        </section>
+      )
+    }
+  </article>
+</Base>

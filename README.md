@@ -53,7 +53,23 @@ LaTeX works as in Org. `\begin{equation}` blocks are numbered in order, and `\re
 
 ## Other pages
 
-`content/pages/*.org` become top-level pages: `about.org` → `/about/`. `now.org` also fills the Now box on the home page, so keep it to a short description list and update its `#+date`.
+`content/pages/*.org` become top-level pages: `about.org` → `/about/`.
+
+## Now
+
+`content/now.org` is a journal: each top-level heading is a dated entry, newest first.
+
+```org
+* [2026-11-20 Fri] Winter reading
+- Reading :: [[https://…][/Title/]] by Author
+- Wearing :: …
+- Building :: …
+
+* [2026-10-12 Mon]
+- Reading :: …
+```
+
+The newest entry fills the Now box on the home page and the top of `/now/`; older entries are listed beneath it as "Previously". To update, copy the latest entry into a new dated heading above it and edit that. The label after the date is optional.
 
 ## Résumé
 

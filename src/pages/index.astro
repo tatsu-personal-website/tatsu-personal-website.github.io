@@ -1,12 +1,13 @@
 ---
-import { getEntry, render } from 'astro:content';
+import { render } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import EssayList from '../components/EssayList.astro';
 import { formatDate, getEssays } from '../lib/essays';
+import { getNowEntries } from '../lib/now';
 import resume from '../../resume/resume.json';
 
 const essays = await getEssays();
-const now = await getEntry('pages', 'now');
+const [now] = await getNowEntries();
 const { Content: Now } = now ? await render(now) : { Content: null };
 
 // schema.org Person, from the same data as the résumé, for search engines
@@ -55,7 +56,7 @@ const person = {
           <aside class="now-box" aria-labelledby="now">
             <h2 id="now" class="label label-green">Now</h2>
             <Now />
-            {now?.data.date && <p class="meta">Updated {formatDate(now.data.date, 'month')}</p>}
+            {now && <p class="meta">Updated {formatDate(now.data.date, 'month')}</p>}
           </aside>
         )
       }

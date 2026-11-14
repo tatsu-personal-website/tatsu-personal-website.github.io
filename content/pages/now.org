@@ -1,7 +1,0 @@
-#+title: Now
-#+date: [2026-10-12 Mon]
-#+description: What I'm reading, wearing, and working on.
-
-- Reading :: /The Gentlemen's Book of Etiquette and Manual of Politeness/
-- Wearing :: Navy hopsack blazer, oxford cloth button-down, repp tie, gray pleated pants, black penny loafers.
-- Building :: This website!
