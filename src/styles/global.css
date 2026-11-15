@@ -720,6 +720,46 @@ dd > p:only-child {
   font-style: italic;
   color: var(--muted);
 }
+.tags a {
+  color: inherit;
+}
+.tags a:hover {
+  color: var(--accent);
+}
+
+/* Tag pages */
+.index-head .label {
+  margin-bottom: 0.6rem;
+}
+.tag-posts {
+  max-width: var(--measure);
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+}
+.tag-index {
+  max-width: 44rem;
+  margin: 0;
+  padding: 1.5rem 0 0;
+  border-top: 1px solid var(--rule);
+  list-style: none;
+  columns: 3 11rem;
+  column-gap: 2.5rem;
+}
+.tag-index li {
+  margin: 0 0 0.5rem;
+  break-inside: avoid;
+}
+.tag-index a {
+  font-size: 1.05rem;
+  text-decoration: none;
+}
+.tag-index a:hover {
+  color: var(--accent);
+}
+.tag-index .meta {
+  display: inline;
+  margin-left: 0.3rem;
+}
 .back-link {
   font-size: 0.9rem;
   font-style: italic;

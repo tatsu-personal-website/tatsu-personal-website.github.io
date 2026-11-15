@@ -1,14 +1,16 @@
 ---
-import type { CommonplaceEntry } from '../lib/commonplace';
-import { formatDate, type Essay } from '../lib/essays';
+import { formatDate } from '../lib/essays';
+import { postPath, type Post } from '../lib/posts';
 
 interface Props {
-  essays: (Essay | CommonplaceEntry)[];
+  essays: Post[];
   showDescription?: boolean;
-  /** URL prefix for each entry. */
-  base?: string;
+  /** Label commonplace entries as such, for lists that mix them with essays. */
+  showSection?: boolean;
 }
-const { essays, showDescription = false, base = '/essays/' } = Astro.props;
+const { essays, showDescription = false, showSection = false } = Astro.props;
+const sectionOf = (post: Post) =>
+  post.collection === 'commonplace' ? (showSection ? 'Commonplace' : undefined) : post.data.category;
 ---
 
 <ul class="essay-list">
@@ -16,11 +18,11 @@ const { essays, showDescription = false, base = '/essays/' } = Astro.props;
     essays.map((essay) => (
       <li>
         {essay.data.type === 'note' && <span class="kind-label">Note</span>}
-        <a href={`${base}${essay.id}/`}>{essay.data.title}</a>
+        <a href={postPath(essay)}>{essay.data.title}</a>
         {essay.data.draft && <span class="draft-badge">Draft</span>}
         {showDescription && essay.data.description && <p class="essay-dek">{essay.data.description}</p>}
         <p class="meta">
-          {essay.data.category && <>{essay.data.category} · </>}
+          {sectionOf(essay) && <>{sectionOf(essay)} · </>}
           <time datetime={essay.data.date?.toISOString()}>{formatDate(essay.data.date, 'month')}</time>
         </p>
       </li>

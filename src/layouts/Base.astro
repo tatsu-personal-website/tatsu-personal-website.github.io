@@ -5,18 +5,28 @@ import '@fontsource/libre-caslon-text/700.css';
 import '@fontsource/libre-caslon-display/400.css';
 import '../styles/global.css';
 import Monogram from '../components/Monogram.astro';
+import { DEFAULT_OG_IMAGE, OG_HEIGHT, OG_WIDTH } from '../lib/og';
 
 interface Props {
   title?: string;
   description?: string;
   type?: 'website' | 'article';
+  /** Link-preview image, a path from src/lib/og.ts. */
+  image?: string;
 }
 
 const SITE = 'Alexander Phillips';
-const { title, description = 'Essays on American politics and classic menswear.', type = 'website' } = Astro.props;
+const {
+  title,
+  description = 'Essays on American politics and classic menswear.',
+  type = 'website',
+  image = DEFAULT_OG_IMAGE,
+} = Astro.props;
 const fullTitle = title ? `${title} · ${SITE}` : SITE;
 const path = Astro.url.pathname;
 const canonical = new URL(path, Astro.site);
+const imageUrl = new URL(image, Astro.site);
+const imageAlt = image === DEFAULT_OG_IMAGE ? SITE : `${title} · ${SITE}`;
 
 const nav = [
   { href: '/essays/', label: 'Essays' },
@@ -45,6 +55,12 @@ const isCurrent = (href: string) => path === href || (href !== '/' && path.start
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:site_name" content={SITE} />
+    <meta property="og:image" content={imageUrl} />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content={String(OG_WIDTH)} />
+    <meta property="og:image:height" content={String(OG_HEIGHT)} />
+    <meta property="og:image:alt" content={imageAlt} />
+    <meta name="twitter:card" content="summary_large_image" />
     <slot name="head" />
   </head>
   <body>

@@ -1,0 +1,28 @@
+---
+// One page per #+filetags tag, listing essays, notes and commonplace entries.
+import Base from '../../layouts/Base.astro';
+import EssayList from '../../components/EssayList.astro';
+import { getTags, type Tag } from '../../lib/posts';
+
+export async function getStaticPaths() {
+  const tags = await getTags();
+  return tags.map((tag) => ({ params: { tag: tag.slug }, props: { tag } }));
+}
+
+const { tag } = Astro.props as { tag: Tag };
+const count = tag.posts.length === 1 ? 'One post' : `${tag.posts.length} posts`;
+---
+
+<Base title={`Filed under ${tag.label}`} description={`Posts filed under ${tag.label}.`}>
+  <div class="page">
+    <header class="index-head">
+      <p class="label">Filed under</p>
+      <h1>{tag.label}</h1>
+      <p>{count}.</p>
+    </header>
+    <div class="tag-posts">
+      <EssayList essays={tag.posts} showDescription showSection />
+    </div>
+    <a class="more-link" href="/tags/">All tags</a>
+  </div>
+</Base>

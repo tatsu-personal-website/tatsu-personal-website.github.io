@@ -3,7 +3,9 @@ import 'katex/dist/katex.min.css';
 import { render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import Monogram from '../../components/Monogram.astro';
+import Tags from '../../components/Tags.astro';
 import { categoryPath, formatDate, getEssays, type Essay } from '../../lib/essays';
+import { ogImagePath } from '../../lib/og';
 
 export async function getStaticPaths() {
   const essays = await getEssays();
@@ -16,7 +18,7 @@ const isNote = type === 'note';
 const { Content } = await render(essay);
 ---
 
-<Base title={title} description={description} type="article">
+<Base title={title} description={description} type="article" image={ogImagePath(essay)}>
   <article class="essay">
     <header class="essay-head">
       {
@@ -42,7 +44,7 @@ const { Content } = await render(essay);
 
     <footer class="essay-foot">
       <div class="end-mark"><Monogram size="sm" /></div>
-      {tags.length > 0 && <p class="tags">Filed under {tags.map((t) => t.replaceAll('_', ' ')).join(', ')}</p>}
+      <Tags tags={tags} />
       <a class="back-link" href="/essays/">All essays</a>
     </footer>
   </article>

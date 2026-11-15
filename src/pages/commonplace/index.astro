@@ -31,7 +31,7 @@ const title = intro?.data.title ?? 'Commonplace Book';
             {(shelf.author || shelf.year) && (
               <p class="meta shelf-meta">{[shelf.author, shelf.year].filter(Boolean).join(', ')}</p>
             )}
-            <EssayList essays={shelf.entries} base="/commonplace/" showDescription />
+            <EssayList essays={shelf.entries} showDescription />
           </section>
         ))
       ) : (

@@ -1,0 +1,23 @@
+---
+// "Filed under …" at the foot of a post, each tag linking to its tag page.
+import { tagLabel, tagPath } from '../lib/posts';
+
+interface Props {
+  tags: string[];
+}
+const { tags } = Astro.props;
+---
+
+{
+  tags.length > 0 && (
+    <p class="tags">
+      Filed under{' '}
+      {tags.map((tag, i) => (
+        <>
+          {i > 0 && ', '}
+          <a href={tagPath(tag)}>{tagLabel(tag)}</a>
+        </>
+      ))}
+    </p>
+  )
+}

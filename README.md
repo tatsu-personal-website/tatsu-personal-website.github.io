@@ -33,6 +33,7 @@ tap-to-open notes on phones.
 
 - **Notes:** add `#+type: note` for a short post, like a single finding with a picture. It's labeled "Note" in every list and on its page, and it starts without the drop cap.
 - **Category** decides where it's listed: `Clothes` essays also appear under Clothes. Anything else (Politics, Science…) is just a label.
+- **Tags** (`#+filetags: :apparel_arts:ivy:`) link to tag pages that collect every essay, note and commonplace entry with that tag: `:apparel_arts:` reads "apparel arts" and lives at `/tags/apparel-arts/`. `/tags/` lists them all. Reuse a tag to build a series.
 - **Drafts** (`#+draft: t`) appear while running `npm run dev`, with a Draft badge, and are left out of the built site. Delete the line to publish.
 - **Description** is optional; without it, the first paragraph is used.
 - **Revisions:** add `#+updated: [2026-11-01 Sun]` to show a "Revised" date.
@@ -107,3 +108,4 @@ The PDF is built for people and parsers alike: one column in reading order, tagg
 - `src/lib/org.ts` turns Org into HTML (uniorg, then KaTeX, figures, numbered equations, margin notes).
 - `src/lib/org-loader.ts` feeds a folder of Org files into an Astro content collection.
 - `src/styles/global.css` holds the design: Caslon type, navy/cream/oxblood palette, and a navy dark mode.
+- Link previews: every essay and commonplace entry gets a 1200×630 card at `/og/<collection>/<slug>.png`, the image shown when a link is shared. `typst/og.typ` lays it out and `src/lib/og.ts` compiles it during the build, so it needs Typst installed, as the résumé does. Other pages use `/og/default.png`. `typst/house.typ` holds the colors and repp stripe shared with the résumé.

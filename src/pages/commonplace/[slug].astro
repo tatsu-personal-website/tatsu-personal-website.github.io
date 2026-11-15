@@ -3,8 +3,10 @@ import 'katex/dist/katex.min.css';
 import { render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import Monogram from '../../components/Monogram.astro';
+import Tags from '../../components/Tags.astro';
 import { formatDate } from '../../lib/essays';
 import { getCommonplace, type CommonplaceEntry } from '../../lib/commonplace';
+import { ogImagePath } from '../../lib/og';
 
 export async function getStaticPaths() {
   const entries = await getCommonplace();
@@ -18,7 +20,7 @@ const byline = [bookAuthor && `by ${bookAuthor}`, bookYear && `(${bookYear})`].f
 const { Content } = await render(entry);
 ---
 
-<Base title={title} description={description} type="article">
+<Base title={title} description={description} type="article" image={ogImagePath(entry)}>
   <article class="essay">
     <header class="essay-head">
       <p class="label"><a href="/commonplace/">Commonplace</a></p>
@@ -43,7 +45,7 @@ const { Content } = await render(entry);
 
     <footer class="essay-foot">
       <div class="end-mark"><Monogram size="sm" /></div>
-      {tags.length > 0 && <p class="tags">Filed under {tags.map((t) => t.replaceAll('_', ' ')).join(', ')}</p>}
+      <Tags tags={tags} />
       <a class="back-link" href="/commonplace/">The Commonplace Book</a>
     </footer>
   </article>
