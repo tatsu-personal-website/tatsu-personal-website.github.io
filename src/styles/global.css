@@ -343,6 +343,14 @@ dd > p:only-child {
 .essay-list a:hover {
   color: var(--accent);
 }
+.kind-label {
+  margin-right: 0.55rem;
+  font-size: 0.8rem;
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.12em;
+  color: var(--green);
+  vertical-align: 0.1em;
+}
 .essay-dek {
   margin: 0.35rem 0 0;
   font-size: 0.92rem;
@@ -440,7 +448,8 @@ dd > p:only-child {
   hyphens: auto;
   text-wrap: pretty;
 }
-.essay-body > p:first-of-type::first-letter {
+/* Essays open with a drop cap and small caps; notes start plainly. */
+.essay-body:not(.note-body) > p:first-of-type::first-letter {
   float: left;
   margin: 0.08em 0.1em 0 0;
   font-family: var(--display);
@@ -448,7 +457,7 @@ dd > p:only-child {
   line-height: 0.8;
   color: var(--accent);
 }
-.essay-body > p:first-of-type::first-line {
+.essay-body:not(.note-body) > p:first-of-type::first-line {
   font-variant-caps: small-caps;
   letter-spacing: 0.03em;
 }

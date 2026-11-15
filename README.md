@@ -31,6 +31,7 @@ tap-to-open notes on phones.
 [fn:1] Like this one.
 ```
 
+- **Notes:** add `#+type: note` for a short post, like a single finding with a picture. It's labeled "Note" in every list and on its page, and it starts without the drop cap.
 - **Category** decides where it's listed: `Clothes` essays also appear under Clothes. Anything else (Politics, Science…) is just a label.
 - **Drafts** (`#+draft: t`) appear while running `npm run dev`, with a Draft badge, and are left out of the built site. Delete the line to publish.
 - **Description** is optional; without it, the first paragraph is used.

@@ -12,7 +12,9 @@ export async function GET(context: APIContext) {
       title: essay.data.title,
       pubDate: essay.data.date,
       description: essay.data.description,
-      categories: essay.data.category ? [essay.data.category] : [],
+      categories: [essay.data.category, essay.data.type === 'note' ? 'Note' : undefined].filter(
+        (c): c is string => Boolean(c),
+      ),
       link: `/essays/${essay.id}/`,
     })),
   });

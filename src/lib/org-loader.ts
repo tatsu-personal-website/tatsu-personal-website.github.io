@@ -32,6 +32,7 @@ export function orgLoader({ base }: { base: string }): Loader {
             subtitle: k.subtitle,
             date: parseOrgDate(k.date),
             updated: parseOrgDate(k.updated),
+            type: k.type?.trim().toLowerCase() || undefined,
             category: k.category,
             tags: parseOrgTags(k.filetags),
             description: k.description || doc.excerpt,

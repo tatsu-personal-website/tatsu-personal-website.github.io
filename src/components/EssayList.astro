@@ -12,6 +12,7 @@ const { essays, showDescription = false } = Astro.props;
   {
     essays.map((essay) => (
       <li>
+        {essay.data.type === 'note' && <span class="kind-label">Note</span>}
         <a href={`/essays/${essay.id}/`}>{essay.data.title}</a>
         {essay.data.draft && <span class="draft-badge">Draft</span>}
         {showDescription && essay.data.description && <p class="essay-dek">{essay.data.description}</p>}

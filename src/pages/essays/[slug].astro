@@ -11,7 +11,8 @@ export async function getStaticPaths() {
 }
 
 const { essay } = Astro.props as { essay: Essay };
-const { title, subtitle, date, updated, category, tags, description } = essay.data;
+const { title, subtitle, date, updated, category, tags, description, type } = essay.data;
+const isNote = type === 'note';
 const { Content } = await render(essay);
 ---
 
@@ -19,9 +20,11 @@ const { Content } = await render(essay);
   <article class="essay">
     <header class="essay-head">
       {
-        category && (
+        (category || isNote) && (
           <p class="label">
-            <a href={categoryPath(category)}>{category}</a>
+            {category && <a href={categoryPath(category)}>{category}</a>}
+            {category && isNote && ' · '}
+            {isNote && <span class="label-green">Note</span>}
           </p>
         )
       }
@@ -33,7 +36,7 @@ const { Content } = await render(essay);
       </p>
     </header>
 
-    <div class="prose essay-body">
+    <div class:list={['prose', 'essay-body', { 'note-body': isNote }]}>
       <Content />
     </div>
 

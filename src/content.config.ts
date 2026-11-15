@@ -7,6 +7,8 @@ const schema = z.object({
   subtitle: z.string().optional(),
   date: z.date().optional(),
   updated: z.date().optional(),
+  // #+type: note marks a short post; it's labeled "Note" wherever it's listed.
+  type: z.enum(['essay', 'note']).default('essay'),
   category: z.string().optional(),
   tags: z.array(z.string()).default([]),
   description: z.string().optional(),
