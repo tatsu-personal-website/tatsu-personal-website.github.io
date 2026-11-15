@@ -397,6 +397,44 @@ dd > p:only-child {
     gap: 0.75rem;
   }
 }
+/* Commonplace: entries shelved under the book they come from. */
+.commonplace-intro {
+  padding-bottom: 1rem;
+  font-style: italic;
+  color: var(--ink-soft);
+}
+.shelf {
+  max-width: var(--measure);
+  padding: 1.75rem 0 1rem;
+  border-top: 1px solid var(--rule);
+}
+.shelf-title {
+  margin: 0;
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: 1.45rem;
+  line-height: 1.2;
+  text-wrap: balance;
+}
+.shelf-title cite {
+  font-style: italic;
+}
+.shelf-meta {
+  margin: 0.3rem 0 1rem;
+}
+.shelf .essay-list {
+  padding-left: 1.25rem;
+  border-left: 2px solid var(--brass);
+}
+.source-line {
+  margin: 0.9rem 0 0;
+  font-size: 1.05rem;
+  line-height: 1.45;
+  color: var(--ink-soft);
+}
+.source-line cite {
+  font-style: italic;
+}
 .empty-state {
   max-width: var(--measure);
   padding: 1.5rem 0;

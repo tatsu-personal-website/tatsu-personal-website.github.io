@@ -18,6 +18,16 @@ const schema = z.object({
 export const collections = {
   essays: defineCollection({ loader: orgLoader({ base: 'content/essays' }), schema }),
   pages: defineCollection({ loader: orgLoader({ base: 'content/pages' }), schema }),
+  // content/commonplace: one entry per file, grouped on /commonplace/ by #+book.
+  commonplace: defineCollection({
+    loader: orgLoader({ base: 'content/commonplace' }),
+    schema: schema.extend({
+      book: z.string().optional(),
+      bookAuthor: z.string().optional(),
+      bookYear: z.string().optional(),
+      bookLink: z.url().optional(),
+    }),
+  }),
   // content/now.org: each dated top-level headline is one entry.
   now: defineCollection({
     loader: orgJournalLoader({ file: 'content/now.org' }),

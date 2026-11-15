@@ -1,11 +1,14 @@
 ---
+import type { CommonplaceEntry } from '../lib/commonplace';
 import { formatDate, type Essay } from '../lib/essays';
 
 interface Props {
-  essays: Essay[];
+  essays: (Essay | CommonplaceEntry)[];
   showDescription?: boolean;
+  /** URL prefix for each entry. */
+  base?: string;
 }
-const { essays, showDescription = false } = Astro.props;
+const { essays, showDescription = false, base = '/essays/' } = Astro.props;
 ---
 
 <ul class="essay-list">
@@ -13,7 +16,7 @@ const { essays, showDescription = false } = Astro.props;
     essays.map((essay) => (
       <li>
         {essay.data.type === 'note' && <span class="kind-label">Note</span>}
-        <a href={`/essays/${essay.id}/`}>{essay.data.title}</a>
+        <a href={`${base}${essay.id}/`}>{essay.data.title}</a>
         {essay.data.draft && <span class="draft-badge">Draft</span>}
         {showDescription && essay.data.description && <p class="essay-dek">{essay.data.description}</p>}
         <p class="meta">

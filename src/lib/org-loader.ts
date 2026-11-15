@@ -20,9 +20,8 @@ export function orgLoader({ base }: { base: string }): Loader {
         const id = file.replace(/\.org$/, '');
         const source = await readFile(filePath, 'utf8');
         // Always re-render (it takes milliseconds) and digest the output, so
-        // changes to the renderer itself also refresh the stored entry.
+        // changes to the renderer or to this loader also refresh the entry.
         const doc = await renderOrg(source, filePath, publicDir);
-        const digest = generateDigest(source + doc.html);
         const k = doc.keywords;
         const data = await parseData({
           id,
@@ -37,6 +36,13 @@ export function orgLoader({ base }: { base: string }): Loader {
             tags: parseOrgTags(k.filetags),
             description: k.description || doc.excerpt,
             draft: /^(t|true|yes)$/i.test(k.draft ?? ''),
+            // The book a commonplace entry comes from. Collections whose
+            // schema doesn't list these fields simply drop them.
+            // (Not #+source: Org reserves that as an old alias for #+name.)
+            book: k.book,
+            bookAuthor: k.book_author,
+            bookYear: k.book_year,
+            bookLink: k.book_link,
           },
         });
         store.set({
@@ -44,7 +50,7 @@ export function orgLoader({ base }: { base: string }): Loader {
           data,
           body: source,
           filePath: path.relative(root, filePath),
-          digest,
+          digest: generateDigest(JSON.stringify({ source, html: doc.html, data })),
           rendered: { html: doc.html, metadata: { headings: doc.headings } },
         });
       }
@@ -114,7 +120,7 @@ export function orgJournalLoader({ file }: { file: string }): Loader {
             data,
             body,
             filePath: path.relative(root, filePath),
-            digest: generateDigest(body + doc.html),
+            digest: generateDigest(JSON.stringify({ body, html: doc.html, data })),
             rendered: { html: doc.html },
           });
         }

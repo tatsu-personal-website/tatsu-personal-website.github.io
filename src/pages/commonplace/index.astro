@@ -1,0 +1,42 @@
+---
+// The intro comes from content/pages/commonplace.org; entries from content/commonplace/.
+import { getEntry, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import EssayList from '../../components/EssayList.astro';
+import { getCommonplace, shelvesByBook } from '../../lib/commonplace';
+
+const intro = await getEntry('pages', 'commonplace');
+const Intro = intro ? (await render(intro)).Content : undefined;
+const shelves = shelvesByBook(await getCommonplace());
+const title = intro?.data.title ?? 'Commonplace Book';
+---
+
+<Base title={title} description={intro?.data.description}>
+  <div class="page">
+    <header class="index-head">
+      <h1>{title}</h1>
+    </header>
+    {
+      Intro && (
+        <div class="prose commonplace-intro">
+          <Intro />
+        </div>
+      )
+    }
+    {
+      shelves.length ? (
+        shelves.map((shelf) => (
+          <section class="shelf">
+            <h2 class="shelf-title">{shelf.book ? <cite>{shelf.book}</cite> : 'Miscellany'}</h2>
+            {(shelf.author || shelf.year) && (
+              <p class="meta shelf-meta">{[shelf.author, shelf.year].filter(Boolean).join(', ')}</p>
+            )}
+            <EssayList essays={shelf.entries} base="/commonplace/" showDescription />
+          </section>
+        ))
+      ) : (
+        <p class="empty-state">Nothing copied out yet.</p>
+      )
+    }
+  </div>
+</Base>

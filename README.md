@@ -52,6 +52,21 @@ Inline image previews work in Emacs, and the site serves the image from `/media/
 
 LaTeX works as in Org. `\begin{equation}` blocks are numbered in order, and `\ref{label}` in the text becomes a link like "(3)". Use `equation*` for unnumbered blocks.
 
+## Commonplace entries
+
+Create `content/commonplace/<slug>.org` (URL: `/commonplace/<slug>/`). Entries take the same keywords as essays, plus the book they come from:
+
+```org
+#+title: Calling Cards, Then and Now
+#+date: [2026-11-14 Sat]
+#+book: The Gentlemen's Book of Etiquette and Manual of Politeness
+#+book_author: Cecil B. Hartley
+#+book_year: 1860
+#+book_link: https://www.gutenberg.org/ebooks/39293
+```
+
+`/commonplace/` shelves entries under their book, with the book you added to most recently first. Entries on the same book run oldest first, and entries without a `#+book` go under Miscellany. Spell a book's title the same way in every entry so they share a shelf; the author and year can sit on just one of them. The intro paragraph at the top of the page is `content/pages/commonplace.org`.
+
 ## Other pages
 
 `content/pages/*.org` become top-level pages: `about.org` → `/about/`.
